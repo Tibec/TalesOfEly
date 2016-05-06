@@ -15,7 +15,7 @@ public class SmoothCamera : MonoBehaviour {
 	void Start () {
 		tkcamera = GetComponent<tk2dCamera>();
 	}
-	void LateUpdate () {
+	void FixedUpdate () {
 		Debug.Log (tkcamera.ScreenExtents.height);
 		Vector3 p0 = map.data.tileOrigin; //Get the lower left extent of the tile map.
 		Vector3 p1 = new Vector3(p0.x + map.width, p0.y + map.height, 0.0f); //Now get the upper right extent of the tile map.

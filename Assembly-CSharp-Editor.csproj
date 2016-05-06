@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-     <Compile Include="Assets\Resources\Editor\CM Tools\TileMaster\TileMaster.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Camera\tk2dCameraAnchorEditor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Camera\tk2dCameraEditor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Editor\Fonts\tk2dFontBuilder.cs" />
@@ -140,120 +139,28 @@
      <Compile Include="Assets\TK2DROOT\tk2dUI\Editor\Core\tk2dUIMaskEditor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2dUI\Editor\Core\tk2dUIMethodBindingHelper.cs" />
      <Compile Include="Assets\TK2DROOT\tk2dUI\Editor\Core\tk2dUISpriteAnimatorEditor.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\CustomTiledImporterAttribute.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ICustomTiledImporter.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Material.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Mesh.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Texture.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.Xml.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportTiled2Unity.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ImportUtils.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\SortingLayerExposedEditor.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\Tiled2UnityMenuItems.cs" />
-     <Compile Include="Assets\Tiled2Unity\Scripts\Editor\TiledAssetPostProcessor.cs" />
-     <None Include="Assets\Resources\GameMaps\3DPlataformScenePlataforms1.xml" />
-     <None Include="Assets\Tiled2Unity\Imported\colline2.tiled2unity.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\orthogonal-test1_tileset.txt" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick1.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\IsoDungeon.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\stress-test.xml" />
-     <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
-     <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMask.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\stress-test2.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\RenderOrderTest\LeftTop.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\crypt.xml" />
-     <None Include="Assets\Resources\GameMaps\minimalist-collision.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test-Base64-gzip.xml" />
-     <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\gallery.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\DifferentIsoTest02.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\iso-test-objectgroup.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\orthogonal-test5.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\IsoDungeon5.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test-CSV.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\mucus.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\ortho-rotation-test2.xml" />
-     <None Include="Assets\Resources\GameMaps\3DPlataformSceneInvColliders.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\hive.xml" />
-     <None Include="Assets\Resources\GameMaps\PlataformScene.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\Level1\brick4.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\rock.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito24.fnt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick6.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\orthogonal-test1.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\tunnel.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\readme.txt" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\iso-staggered-test.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick3.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\64x64.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\tileset_forTiled.txt" />
-     <None Include="Assets\Resources\OtherMapsExamples\ortho-tile-property.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test-Base64-zlib.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\ortho-rotation-test.xml" />
-     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\DifferentIsoTest01.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\Level1\StaggeredDungeon.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\orthogonal-test4.xml" />
-     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\IsoDungeon2.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\pandem1.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\lapis.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\IsoDungeon4.xml" />
-     <None Include="Assets\Resources\GameMaps\3DPlataformSceneMain.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\RenderOrderTest\RightTop.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\lair.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\iso-test2.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick4.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\gehena.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\catacomb.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test_multipleLayers.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\ortho-objects.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\IsoDungeon3.xml" />
-     <None Include="Assets\Resources\GameMaps\3DPlataformScenePlataforms2.xml" />
-     <None Include="Assets\Resources\GameMaps\Game2DPlataformerWithTiledCollision.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\moss.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\Isometric\Home.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\RenderOrderTest\LeftBottom.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test-tile_collisions.xml" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick5.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito16.fnt" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test-Base64-uncompressed.xml" />
      <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
-     <None Include="Assets\Resources\GameMaps\Desert1.xml" />
-     <None Include="Assets\Resources\GameMaps\Desert2.xml" />
-     <None Include="Assets\Resources\Editor\CM Tools\TileMasterReadme.txt" />
-     <None Include="Assets\Tiled2Unity\License.txt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\cocutos.xml" />
-     <None Include="Assets\Resources\GameMaps\TileFlipTest.xml" />
-     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\normal.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\RenderOrderTest\RightBottom.xml" />
-     <None Include="Assets\Resources\OtherMapsExamples\orthogonal-test3.xml" />
-     <None Include="Assets\Tiled2Unity\Imported\colline.tiled2unity.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
-     <None Include="Assets\Resources\GameMaps\FoldersTest\rltiles-pack\brick2.xml" />
-     <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
-     <None Include="Assets\Resources\OtherMapsExamples\small_test_multiple_tilesets.xml" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -279,13 +186,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="zlib.net">
- <HintPath>C:/Users/Benjamin/Documents/Unity/Test1/New Unity Project/Assets/zlib.net.dll</HintPath>
+ <HintPath>C:/Users/Benjamin/Documents/Unity/Projet/New Unity Project/Assets/zlib.net.dll</HintPath>
  </Reference>
  <Reference Include="tk2dExternal">
- <HintPath>C:/Users/Benjamin/Documents/Unity/Test1/New Unity Project/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+ <HintPath>C:/Users/Benjamin/Documents/Unity/Projet/New Unity Project/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="tk2dSkin">
- <HintPath>C:/Users/Benjamin/Documents/Unity/Test1/New Unity Project/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
+ <HintPath>C:/Users/Benjamin/Documents/Unity/Projet/New Unity Project/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
