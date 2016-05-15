@@ -4,7 +4,38 @@ using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using System.Xml.Linq;
+
+public class TextBox : MonoBehaviour
+{
+
+
+    public Text dialog;
+    public TextAsset xml;
+    public TextAsset xmlDiag;
+    public TextAsset xmlChar;
+    public TextAsset xmlScen;
+
+    // Use this for initialization
+    void Start()
+    {
+        dialog = GetComponent<Text>();
+        XDocument xdocD = XDocument.Parse(xmlDiag.text);
+        XDocument xdocC = XDocument.Parse(xmlChar.text);
+        Character.set_xdoc(xdocC);
+        Dialogs.set_xdoc(xdocD);
+        
+        
+        dialog.text = Dialogs.ToString();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //dialog = GetComponent<Text>();
+    }
+}
 
 class CustomException : Exception
 {
@@ -23,35 +54,43 @@ public class Character : System.Attribute
 {
 	//-------------------------------Private--------------------------------
 	private static List<Character> all = new List<Character>();
+    private static XElement root;
 	private string id;
 	private string name;
+    public static void set_xdoc(XDocument xchar)
+    {
+            //Console.WriteLine("Real Load from XML File");
+        root = xchar.Root;
+        loadCharacters();
+    }
 
-	private static void loadCharacters()
+    private static void loadCharacters()
 	{
-		XElement root;
-		if (all.Count () == 0) {
-			Console.WriteLine ("Real Load from XML File");
-			XDocument xchar = XDocument.Load ("characters.xml");
-			root = xchar.Root;
+        if (root == null)
+            throw new CustomException("Make sure you set the XML doc from which the characters are loaded!");
+        //return "FUCK";
+        else
+        {
+            IEnumerable<XElement> chars =
+                (from el in root.Elements("char")
+                     //where (string)el.Attribute("id") == id.ToString()
+                 select el);
 
-			IEnumerable<XElement> chars =
-				(from el in root.Elements ("char")
-					//where (string)el.Attribute("id") == id.ToString()
-					select el);
-
-			List<Character> l = new List<Character> ();
-			foreach (XElement c in chars) {
-				Character ch = new Character ((string)c.Attribute ("id"), (c.FirstNode as XText).Value);
-				l.Add (ch);
-			}
-			all = l;
-		}
+            List<Character> l = new List<Character>();
+            foreach (XElement c in chars)
+            {
+                Character ch = new Character((string)c.Attribute("id"), (c.FirstNode as XText).Value);
+                l.Add(ch);
+            }
+            all = l;
+            //return "YEAH";
+        }
 	}
 
 	//-------------------------------Public Methods--------------------------------
-	public static List<Character>get_all(){
-		loadCharacters();
-		return all;
+	public static List<Character> get_all(){
+        loadCharacters();
+        return all;
 	}
 
 	private Character (string i, string n){
@@ -143,62 +182,66 @@ public class Part : System.Attribute
 public class Dialogs : System.Attribute
 {
 	private static List<Dialog> all = new List<Dialog>();
-	/*public IEnumerable<Part> content()
-		{
-			return xdialog.Parts();
-		}
-		/*public XElement find_parts (int id){
-			return;
-		}*/
+    private static XElement root;
 
 	private Dialogs (){
 	}
 
 	private static void loadDialogs()
 	{
-		XElement root;
-		if (all.Count () == 0) {
-			Console.WriteLine ("Real Load from XML File");
-			XDocument srcTree = XDocument.Load ("dialogs.xml");
-			root = srcTree.Root;
+        if (root == null)
+            //return "FUCK";
+            throw new CustomException("Make sure you set the XML doc from which the dialogs are loaded!");
+        else
+        {
+            IEnumerable<XElement> dialogs =
+                (from el in root.Elements("d")
+                 select el);
 
-			IEnumerable<XElement> dialogs =
-				(from el in root.Elements ("d")
-					//where (string)el.Attribute("id") == id.ToString()
-					select el);
+            List<Dialog> l = new List<Dialog>();
 
-			List<Dialog> l = new List<Dialog> ();
+            foreach (XElement d in dialogs)
+            {
+                //Console.WriteLine ("---------------------------Getting Dialogs' parts-----------------------");
+                IEnumerable<XElement> parts =
+                    (from el in d.Elements("part")
 
-			foreach (XElement d in dialogs) {
-				//Console.WriteLine ("---------------------------Getting Dialogs' parts-----------------------");
-				//---------------------------Parsing Dialogs' parts-----------------------
-				IEnumerable<XElement> parts =
-					(from el in d.Elements ("part")
-						//where (string)el.Attribute("id") == id.ToString()
-						select el);
+                     select el);
 
-				List<Part> l_parts = new List<Part> ();
-				foreach (XElement p in parts) {
-					//Console.WriteLine ("---------------------------Parsing part-----------------------");
-					Part part = new Part (Character.find((string)p.Attribute ("char")), (p.FirstNode as XText).Value);
-					l_parts.Add (part);
-				}
-				//Console.WriteLine ("---------------------------Parsing Dialog------------------------------");
-				//---------------------------Parsing Dialogs------------------------------
-				Dialog diag = new Dialog ((string)d.Attribute ("id"), l_parts);
-				l.Add (diag);
-			}
-			all = l;
-		}
+                List<Part> l_parts = new List<Part>();
+                foreach (XElement p in parts)
+                {
+                    //Console.WriteLine ("---------------------------Parsing part-----------------------");
+                    Part part = new Part(Character.find((string)p.Attribute("char")), (p.FirstNode as XText).Value);
+                    l_parts.Add(part);
+                }
+                //Console.WriteLine ("---------------------------Parsing Dialog------------------------------");
+                Dialog diag = new Dialog((string)d.Attribute("id"), l_parts);
+                l.Add(diag);
+            }
+            all = l;
+            //return "YEAH";
+        }
 	}
-	/*public static List<Dialog> get_all(){
+    /*public static List<Dialog> get_all(){
 			loadDialogs ();
 			return all;
 		}*/
 
-	public static string ToString(){
-		loadDialogs	();
-		int i = 1;
+
+    public static void set_xdoc(XDocument xchar)
+    {
+
+            //Console.WriteLine("Real Load from XML File");
+            root = xchar.Root;
+
+    }
+
+    public static string ToString(){
+		 loadDialogs ();
+        if (all.Count() == 0)
+            throw new CustomException("No dialogs found!");
+        int i = 1;
 		string render = "----------------------Dialogs-----------------------------\n";
 		string end = "----------------------Dialogs: End-----------------------------\n";
 		foreach (Dialog d in all) {
@@ -228,22 +271,12 @@ public class Dialogs : System.Attribute
 				return d;
 		throw new CustomException ("Dialog Not Found");
 	}
+
+    public static int count()
+    {
+        return all.Count();
+    }
 }
 
 
-public class TextBox : MonoBehaviour {
 
-
-	public Text dialog;
-
-	// Use this for initialization
-	void Start () {
-		dialog = GetComponent<Text>();
-		dialog.text = "Something";
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}

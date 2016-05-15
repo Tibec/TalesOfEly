@@ -19,3 +19,4 @@ C:\Users\BWGaming\Projects\projet_si28\Temp\bin\Release\UnityEngine.UI.xml
 C:\Users\BWGaming\Projects\projet_si28\Temp\bin\Release\UnityEngine.Networking.xml
 C:\Users\BWGaming\Projects\projet_si28\obj\Release\Assembly-CSharp.dll
 C:\Users\BWGaming\Projects\projet_si28\obj\Release\Assembly-CSharp.pdb
+C:\Users\BWGaming\Projects\projet_si28\obj\Release\Assembly-CSharp.csprojResolveAssemblyReference.cache
