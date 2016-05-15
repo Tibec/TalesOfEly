@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dialogs>
+  <d id='1'>
+    <part char='1'>
+      Blablabla
+    </part>
+    <part char='1'>
+      Blablabla
+    </part>
+    <part char='2'>
+      Blablabla
+    </part>
+    <part char='2'>
+      Blablabla
+    </part>
+  </d>
+  <d id='1'>
+    <part char='1'>
+      Blablabla
+    </part>
+    <part char='1'>
+      Blablabla
+    </part>
+    <part char='2'>
+      Blablabla
+    </part>
+    <part char='2'>
+      Blablabla
+    </part>
+  </d>
+</dialogs>
