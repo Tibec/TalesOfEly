@@ -1,9 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SmoothCamera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player.cs">
     <Files>
-      <File FileName="Assets\SmoothCamera.cs" Line="20" Column="1" />
-      <File FileName="Assets\Player.cs" Line="12" Column="1" />
+      <File FileName="Assets\PlayerData.cs" Line="31" Column="15" />
+      <File FileName="Assets\TextBox.cs" Line="1" Column="1" />
+      <File FileName="Assets\SmoothCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets\Player.cs" Line="46" Column="27" />
+      <File FileName="Assets\Story\story.xml" Line="1" Column="1" />
+      <File FileName="Assets\Story\Cinematics.cs" Line="20" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

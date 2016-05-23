@@ -2,7 +2,6 @@
 using System.Collections;
 using System;
 
-
 public class Player : MonoBehaviour {
 	public int speed;
 	public float inertia;
@@ -16,6 +15,8 @@ public class Player : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		sr = GetComponent<SpriteRenderer>();
 		inertia = remainingInertia = 3;
+		speed = PlayerPrefs.GetInt ("speed");
+
 	}
 
 	void ProcessWalk()
@@ -40,6 +41,18 @@ public class Player : MonoBehaviour {
 
 
 			}
+		}
+
+		if (Input.GetKeyDown ("a")) {
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("Scene/Village");
+		}
+
+		if (moveHorizontal > 0) {
+			PlayerData.Instance.Disp ();
+		}
+
+		if (moveHorizontal < 0) {
+			PlayerData.Instance.setBidule ("Voilalaaaaaa");
 		}
 
 	}
