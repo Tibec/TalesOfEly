@@ -6,8 +6,12 @@ public class PlayerData
 {
 	private static PlayerData instance;
 
-	private String _a = "Fuuu";
-	private PlayerData() {}
+	public enum AvatarType {
+		Male,
+		Female
+	}
+
+	private AvatarType charGender;
 
 	public static PlayerData Instance
 	{
@@ -21,13 +25,13 @@ public class PlayerData
 		}
 	}
 
-	public void setBidule(String a)
+	public void SetAvatar(AvatarType t)
 	{
-		_a = a;
+		charGender = t;
 	}
 
 	public void Disp()
 	{
-		Debug.Log (_a);
+		Debug.Log ("Prout");
 	}
 }

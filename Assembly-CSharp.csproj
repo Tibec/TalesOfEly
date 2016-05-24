@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GestionCreditUI.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\PlayerData.cs" />
      <Compile Include="Assets\SmoothCamera.cs" />
@@ -130,6 +131,7 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
      <Compile Include="Assets\TextBox.cs" />
+     <Compile Include="Assets\UiController.cs" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />

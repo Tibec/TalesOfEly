@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
 		}
 
 		if (moveHorizontal < 0) {
-			PlayerData.Instance.setBidule ("Voilalaaaaaa");
+			//PlayerData.Instance.setBidule ("Voilalaaaaaa");
 		}
 
 	}
