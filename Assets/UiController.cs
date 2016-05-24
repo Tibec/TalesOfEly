@@ -68,12 +68,14 @@ public class UiController : tk2dUIBaseDemoController {
 		} else if (btn.name == maleBtn.name) {
 			PlayerData.Instance.SetAvatar(PlayerData.AvatarType.Male);
 			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene/Colline");
-
+			AnimateHideWindow(charSelectWindow.transform);
 		} else if (btn.name == femaleBtn.name) {
+			AnimateHideWindow(charSelectWindow.transform);
 			PlayerData.Instance.SetAvatar(PlayerData.AvatarType.Female);
 			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene/Colline");
 		} else if (btn.name == creditBtn.name) {
 			// Load credit scene
+			AnimateHideWindow(mainWindow.transform);
 			UnityEngine.SceneManagement.SceneManager.LoadScene("Scene/Credit");
 		}
 
