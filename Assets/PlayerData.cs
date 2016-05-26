@@ -12,6 +12,17 @@ public class PlayerData
 	}
 
 	private AvatarType charGender;
+	private int currentScene;
+
+	public AvatarType Avatar {
+		get {return charGender;}
+		set { charGender = value; } 
+	}
+
+	public int Scene {
+		get { return currentScene; }
+		set { currentScene = value; }
+	}
 
 	public static PlayerData Instance
 	{
@@ -25,10 +36,6 @@ public class PlayerData
 		}
 	}
 
-	public void SetAvatar(AvatarType t)
-	{
-		charGender = t;
-	}
 
 	public void Disp()
 	{

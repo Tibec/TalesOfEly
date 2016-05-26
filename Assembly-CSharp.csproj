@@ -45,7 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Character.cs" />
      <Compile Include="Assets\CircularRotation.cs" />
+     <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\GameScene.cs" />
      <Compile Include="Assets\GestionCreditUI.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\PlayerData.cs" />
