@@ -9,8 +9,11 @@
 	<scenes>
 		<scene id='0' map="colline">
 			<content>
-				<cinematic id='1'>
-				</cinematic>
+				<dialog>
+					<part char='1'>Luke ?</part>
+					<part char='2'>Je suis ton p¨¨re !</part>
+					<part char='1'>NOOOOOOOOOOOOOOOOOOOOOOOO !</part>
+				</dialog>
 				<dialog>
 					<part char='1'>Luke ?</part>
 					<part char='2'>Je suis ton p¨¨re !</part>

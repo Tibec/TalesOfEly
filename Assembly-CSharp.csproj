@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\StoryMgr\Scenes.cs" />
      <Compile Include="Assets\Scripts\StoryMgr\StoryManager.cs" />
      <Compile Include="Assets\Scripts\UI\CircularRotation.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogManager.cs" />
      <Compile Include="Assets\Scripts\UI\GestionCreditUI.cs" />
      <Compile Include="Assets\Scripts\UI\UiController.cs" />
      <Compile Include="Assets\Scripts\old\Player.cs" />

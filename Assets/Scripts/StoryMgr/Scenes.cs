@@ -46,7 +46,6 @@ namespace Entities
 
 	}
 
-	public enum content_type {DIALOG, CINEMATIC, CHOICE};
 
 	public class Part : System.Attribute
 	{
@@ -59,20 +58,13 @@ namespace Entities
 			text = t;
 		}
 
-		public int get_chr(){
-			return chr_id;
+		public int Char {
+			get { return chr_id; }
 		}
 
-		public string get_text(){
-			return text;
+		public string Text {
+			get { return text; }
 		}
-
-		public override string ToString(){
-			string render = get_chr () + ":" + get_text ();
-			return render;
-		}
-
-
 	}
 
 	public class Choice : System.Attribute
@@ -101,24 +93,26 @@ namespace Entities
 
 
 	}
+	public enum content_type {DIALOG, CINEMATIC, CHOICE};
+
 	public class Content : System.Attribute
 	{
-		private string id;
-		public static content_type type;
+		private int id;
+		public content_type type;
 
-		private List<Part> parts;
+		private List<Part> dialogParts;
 
-		public static Content buildDialog(string i, List<Part> p){
-			Content d = new Content (i, content_type.DIALOG);
-			d.parts = p;
+		public static Content buildDialog(List<Part> p){
+			Content d = new Content (content_type.DIALOG, 0);
+			d.dialogParts = p;
 			return d;
 		}
-		public static Content buildCinematic(string i){
-			Content c = new Content (i, content_type.CINEMATIC);
+		public static Content buildCinematic(int i){
+			Content c = new Content (content_type.CINEMATIC, i);
 			return c;
 		}
 
-		public Content (string i, content_type t){
+		public Content (content_type t, int i){
 			id = i;
 			type = t;
 		}
@@ -126,17 +120,11 @@ namespace Entities
 			type = t;
 		}
 
-		public string ToStringDialog(){
-			string render = "";
-			foreach (Part p in parts) {
-
-				render = render + p.ToString();
-				render = render + Environment.NewLine;
-			}
-			return render;
+		public List<Part> Parts {
+			get { return dialogParts; }
 		}
 
-		public string get_id(){
+		public int get_id(){
 			return id;
 		}
 		public content_type get_type(){

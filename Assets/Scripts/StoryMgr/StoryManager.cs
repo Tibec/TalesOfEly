@@ -27,9 +27,13 @@ public class StoryManager {
 		}
 		throw new Exception ("Cannot found scene id :" + id);
 	}
-		
-
-
+	public Character GetCharacter(int id) {
+		foreach (Character s in chars) {
+			if (s.Id == id)
+				return s;
+		}
+		throw new Exception ("Cannot found char id :" + id);
+	}
 
     private void Init()
     {
@@ -95,7 +99,7 @@ public class StoryManager {
 					select el);
 			foreach (XElement cin in cins)
 			{
-				Content cont = Content.buildCinematic((string)cin.Attribute("id"));
+				Content cont = Content.buildCinematic((int)cin.Attribute("id"));
 				lc.Add(cont);
 				//Console.WriteLine (lc.Count ());
 			}
@@ -120,7 +124,7 @@ public class StoryManager {
 				}
 				//Console.WriteLine ("---------------------------Parsing Dialog------------------------------");
 				//---------------------------Parsing Dialogs------------------------------
-				Content diag = Content.buildDialog((string)d.Attribute("id"), l_parts);
+				Content diag = Content.buildDialog(l_parts);
 				lc.Add(diag);
 				//Console.WriteLine (lc.Count ());
 			}
