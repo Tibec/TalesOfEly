@@ -2,28 +2,160 @@
 
 <story>
 	<characters>
-		<char id='1' face="x.png" >Dark Vador</char>
-		<char id='2' face="y.png" >Luke</char>
-		<char id='3' face="z.png" >Luke</char>
+    <char id='0' face="x.png" >Narrateur</char>
+		<char id='1' face="x.png" >Eli</char>
+		<char id='2' face="y.png" >Mère d'Eli</char>
+    <char id='3' face="z.png" >Elfe</char>
+    <char id='6' face="z.png" >Tous les elfes</char>
+		<char id='4' face="z.png" >Le grand-père</char>
+    <char id='5' face="z.png" >Chèvre</char>
 	</characters>
 	<scenes>
 		<scene id='0' map="colline">
 			<content>
+
+				<cinematic id='1'>
+				</cinematic>
+
 				<dialog>
-					<part char='1'>Luke ?</part>
-					<part char='2'>Je suis ton p��re !</part>
-					<part char='1'>NOOOOOOOOOOOOOOOOOOOOOOOO !</part>
-				</dialog>
-				<dialog>
-					<part char='1'>Luke ?</part>
-					<part char='2'>Je suis ton p��re !</part>
-					<part char='1'>NOOOOOOOOOOOOOOOOOOOOOOOO !</part>
+          <part char='0'>
+          Cette histoire commence dans le village d'Yggdrasil. Notre personnage principal Eli, jeune fermier qui surveille son troupeau de chèvres.
+        </part>
+					<part char='1'>C'est le milieu de l'après-midi. Ely surveille son troupeau de chèvres.
+          Il fait beau, l'air est frais. je ferai bien un petit somme …Il ne s'endort pas.</part>
 				</dialog>
 			</content>
 			<choices>
-				<c goto='2'>Sauter dans le vide #Yolo</c>
-				<c goto='3'>Ne rien faire</c>
+				<c goto='2'>Il s'endort</c>
+				<c goto='3'>Il ne s'endort pas</c>
 			</choices>
+		</scene>
+  <scene id='3' map="colline">
+			<content>
+				<cinematic id='2'>
+				</cinematic>
+        <part char='0'>Quelques minutes plus tard, il remarque tout à coup qu'une de ses chèvres et en train de s'enfuir.</part>
+				<dialog>
+					<part char='1'>Mais qu'est-ce que !? </part>
+          <part char='0'>Il s'élance, passe à coté d'un buisson de ronces et s’égratigne la jambe</part>
+          <part char='1'>Aie !</part>
+          <part char='0'>Il continue tout de même sur sa lancée, et fini par rattraper sa chèvre.</part>
+          <part char='1'>Ah ! Je t'ai rattrapé. Aller, retourne avec les autres !</part>
+        
+        <part char='0'>Ely et la chèvre retourne progressivement vers le sommet de la colline.</part>
+          <part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
+        <part char='0'>Jette un coup d’œil à sa cheville.</part>
+        Tiens ?!
+        <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
+        <part char='1'>J'ai pourtant pas rêver …</part>  
+        <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
+				</dialog>
+			</content>
+			<choices>
+				<c goto='4'>Il lui en parle pendant le dîner.</c>
+				<c goto='5'>ayant peur d’etre pris pour un fou, il garde cette expérience pour lui.</c>
+			</choices>
+		</scene>
+    <scene id='4' map="colline">
+			<content>
+				<cinematic id='1'>
+				</cinematic>
+        
+				<dialog>
+          <part char='2'>... (abasourdie)</part>
+          <part char='0'>Elle se sent subitement mal à l’aise, et élude la question. Ely n’insiste pas aux vues de son comportement. Cette question le travaille toute la nuit.</part>
+				<part char='0'>Le lendemain matin, sur le chemin du retour il fait une fixation sur le fameux buisson. 
+        En prenant une épine du chardon, il se pique le doigt, une goutte de sang perle et soudain la blessure se referme.</part>
+          <part char='1'>Oh mon Dieu</part>
+        <part char='0'> Terrorisé, abasourdi, il recommence dans le but de confirmer l’effet. Après quelques secondes d’inaction/panique il retourne sous son arbre avant de ramener ses chèvres chez lui.</part>
+        <part char='0'>Sur le chemin du retour le temps s’assombrit, le vent se lève, un frisson général traverse le troupeau qui s’affole et se disperse.</part>
+        <part char='1'>Eh! Où est ce que vous allez?</part>
+        <part char='0'>Et Les chèvres de notre jeune fermier partent en direction de la forêt interdite.</part>
+        
+      </dialog>
+			</content>
+      
+			<choices>
+				<c goto='4'> Ely choisit de pénétrer dans la forêt interdite pour retrouver ses chèvres</c>
+				<c goto='5'>Pris de peur, Ely ne prend pas de risque et décide de ramener ses chèvres restantes chez lui.</c>
+			</choices>
+		</scene>
+    
+    <scene id='4' map="colline">
+			<content>
+				<cinematic id='2'>
+				</cinematic>
+        
+				<dialog>
+					<part char='0'> S’enfonçant dans la forêt, il n’en retrouvent aucune et remarque que la forêt est particulièrement silencieuse. Il se pose progressivement des questions sur cette forêt:</part>
+          <part char='1'>(voix tremblante)Pourquoi est-elle interdite?</part>
+          <part char='1'>(voix tremblante)Que dit la légende, déjà?</part>
+          <part char='0'>(Grand père du village)Il y a très, très longtemps, la forêt d'Yggdrasil était occupée par des créatures fantastiques, vampires, phénix, goules.</part>
+          <part char='0'>Mais les êtres humains, avide de richesses, leur ont livré une bataille sans merci à l'issue de laquelle les hommes furent vainqueurs.</part>
+          <part char='1'>Ah ouais, c'était çela!</part>
+          <part char='0'>Il voit tout à coup, des empreintes de chèvres qu'il suit.</part>
+          <part char='0'>Ainsi, Ely retrouve une des chèvres, figée devant ce qui lui semble être un portail magique.</part>
+          <part char='1'>Non, c'est... c'est impossible.</part>
+          <part char='0'>Il prend 5 secondes pour reprendre ces esprits, croyant halluciner...</part>
+          <part char='1'>Ouah, serait-ce vraiment un... portail?</part>
+          <part char='0'> A peine pose t-il  une main qu’il se sent aspiré par une force invisible.</part>
+          <part char='1'>AAAAAAHHH... mais qu'est ce que...?</part>
+          <part char='0'>Il se retrouve en plein milieu d’une clairière. Il remarque que le ciel est violet, la lune bleue.</part>
+          <part char='0'>Subitement, une flèche effleure son oreille. alors qu’il lève les mains en signe de paix, il se prend une flèche dans le bras gauche.</part>
+          <part char='3'>Veuillez décliner votre identité!</part>
+          <part char='1'>Ely Voxen, je viens en...</part>
+          <part char='3'>Silence!</part>
+          <part char='0'>L'elfe se rapproche de lui, et se fige!</part>
+          <part char='3'>(pense)Il n'est pas bléssé?</part>
+          <part char='3'>Vous autres, amenez-le!</part>
+          <part char='1'>Non, s'il vous plait, lachez moi! Je ne vous veux aucun mal! Je rentrerai de l'autre côté s'il le faut...</part>
+          <part char='0'>Ely se fait ainsi capturer par les elfes.</part>
+          <part char='6'>Qui vous envoie? D'où venez vous? Qu'attendez-vous de nous?...</part>
+          <part char='0'>Tous les elfes qui posent des questions et parlent en même temps...</part>
+          <part char='0'>Soudain, une voix altérée par le temps surgit:</part>
+          <part char='4'>Silence!</part>
+          <part char='4'>Que se passe t-il ici?</part>
+          <part char='4'>Qui es tu jeune homme?</part>
+          <part char='1'>Ely Voxen, pauvre fermier, qui ne vous souhaite aucun mal. J'aimerai juste rentrer chez moi...</part>
+          <part char='4'>Et comment as tu fait pour arriver ici?</part>
+          <part char='1'>Eh bien... Le portail. C'est évident. D'ailleurs, c'est très dangereux de le laisser à la portée de tous.</part>
+          <part char='0'>L'Ancien se rend donc compte que notre jeune aventurier est ignorant de ce monde. Il en déduit qu'il ne représente pas une menace.</part>
+          <part char='0'>De plus le jeune Ely, a pu pénétrer ce monde. Ce jeune a donc nécessairement une essence magique.</part>
+          <part char='4'>Allons, libérer ce jeune homme. Il n'est pas une menace pour nous... Bien au contraire (le sourire aux lèvres, en détachant Ely)</part>
+          <part char='0'>Au contact de l’Ancien Ely ressent une présence très forte, quasi écrasante</part>
+          <part char='4'>Ce que tu ressens est mon essence magique. Etant le plus agé de ce village, il est normal que tu sois impressionné par mon énergie magique</part>
+          <part char='4'>Tu as pu détecter mon essence sans avoir vécu dans ce monde. Pour quelqu'un qui vit avec les humains, tes capacités sont impressionantes.</part>
+          <part char='4'>Elles nous seraient d'ailleurs bien utiles. Acceptes-tu de rester parmi nous un peu plus longtemps, jeune homme?</part>
+          
+				</dialog>
+			</content>
+			<choices>
+				<c goto='6'>Intrigué par ce qu'a dit l'ancien, Ely accepte de rester</c>
+				<c goto='7'>L'issue de cette aventure étant trop incertaine, Ely décide de rentrer</c>
+			</choices>
+		</scene>
+    
+    <scene id='7' fin='true' map="colline">
+			<content>
+				<cinematic id='2'>
+				</cinematic>
+        
+				<dialog>
+					<part char='4'>Tu m'en vois navré, jeune homme. Soit, si telle est ta décision</part>
+          <part char='1'>Je suis désolé, ce monde n'est pas le mien... J'ai une famille de l'autre côté. Cependant si par hasard vous les avez vus, je souhaite ramener mes chèvres avec moi.</part>
+          <part char='6'>Non, non, on a pas vu de chèvres... T'as vu une chèvre, toi? Pas du tout...</part>
+          <part char='1'>Bien, elles doivent être de l'autre coté de la forêt.</part>
+          <part char='0'>Ely se dirige donc le portail et le traverse. Toujours sous le choc, il se demande s'il a fait le bon choix. Il aperçoit alors une de ces chèvres, puis le reste du troupeau.</part>
+          <part char='0'>Notre jeune aventurier retrouve le sourire et rentre avec ces chèvres.</part>
+          <part char='0'>Une fois rentrée il raconte à sa mère, toute son aventure</part>
+          <part char='0'>A peine avait-il commencé...</part>
+          <part char='2'>Qu'as tu fait!? Ne sais tu pas que ces lieux sont interdits?</part>
+          <part char='0'>Chez les Voxen, la soirée se termine sous le poids du silence.</part>
+          <part char='1'>Je vais donc aller... me coucher.</part>
+          <part char='0'>Cette aventure marquera la vie de Ely. Il passera une nuit blanche à douter de tout ce qu'il croit vrai et évident...</part>
+          <part char='0'>Pour le restant de ces jours, jamais il n'essayera, malgré l'envie, de pénétrer le monde des elfes.</part>
+				</dialog>
+			</content>
 		</scene>
 	</scenes>
 </story>
