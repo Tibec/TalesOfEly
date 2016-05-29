@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 69db680b06c627c4cb7c4b056c672f83
+timeCreated: 1464535159
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EliM_0
+    21300002: EliM_1
+    21300004: EliM_2
+    21300006: EliM_3
+    21300008: EliM_4
+    21300010: EliM_5
+    21300012: EliM_6
+    21300014: EliM_7
+    21300016: EliM_8
+    21300018: EliM_9
+    21300020: EliM_10
+    21300022: EliM_11
+    21300024: EliM_12
+    21300026: EliM_13
+    21300028: EliM_14
+    21300030: EliM_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 0.001
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EliM_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 24}
+        - {x: -13.5, y: 20}
+        - {x: -13.5, y: -7}
+        - {x: -11.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 12.5, y: -23}
+        - {x: 13.5, y: -21}
+        - {x: 13.5, y: 21}
+        - {x: 8.5, y: 24}
+    - name: EliM_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 23}
+        - {x: -12.5, y: 19}
+        - {x: -12.5, y: -13}
+        - {x: -7.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 12.5, y: -11}
+        - {x: 12.5, y: 17}
+        - {x: 5.5, y: 23}
+    - name: EliM_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 24}
+        - {x: -13.5, y: 20}
+        - {x: -13.5, y: -7}
+        - {x: -11.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 12.5, y: -23}
+        - {x: 13.5, y: -21}
+        - {x: 13.5, y: 21}
+        - {x: 8.5, y: 24}
+    - name: EliM_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 23}
+        - {x: -12.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 12.5, y: -20}
+        - {x: 12.5, y: 17}
+        - {x: 6.5, y: 23}
+    - name: EliM_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 24}
+        - {x: -8.5, y: 24}
+        - {x: -12.5, y: 19}
+        - {x: -12.5, y: -4}
+        - {x: -6.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 11.5, y: -21}
+        - {x: 11.5, y: 20}
+        - {x: 7.5, y: 23}
+    - name: EliM_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 23}
+        - {x: -13.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 12.5, y: -20}
+        - {x: 12.5, y: 21}
+        - {x: 6.5, y: 23}
+    - name: EliM_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 24}
+        - {x: -8.5, y: 24}
+        - {x: -12.5, y: 19}
+        - {x: -12.5, y: -4}
+        - {x: -6.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 11.5, y: -21}
+        - {x: 11.5, y: 20}
+        - {x: 7.5, y: 23}
+    - name: EliM_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 23}
+        - {x: -12.5, y: -23}
+        - {x: 12.5, y: -23}
+        - {x: 12.5, y: 13}
+        - {x: 10.5, y: 23}
+    - name: EliM_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 24}
+        - {x: -12.5, y: 21}
+        - {x: -12.5, y: -20}
+        - {x: -5.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 11.5, y: -13}
+        - {x: 11.5, y: 21}
+        - {x: 5.5, y: 24}
+    - name: EliM_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 23}
+        - {x: -13.5, y: 20}
+        - {x: -13.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 12.5, y: -20}
+        - {x: 12.5, y: 20}
+        - {x: 5.5, y: 23}
+    - name: EliM_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 24}
+        - {x: -12.5, y: 21}
+        - {x: -12.5, y: -20}
+        - {x: -5.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 11.5, y: -13}
+        - {x: 11.5, y: 21}
+        - {x: 5.5, y: 24}
+    - name: EliM_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 23}
+        - {x: -13.5, y: 18}
+        - {x: -13.5, y: -19}
+        - {x: -12.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 12.5, y: -21}
+        - {x: 12.5, y: 18}
+        - {x: 6.5, y: 23}
+    - name: EliM_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 24}
+        - {x: -8.5, y: 24}
+        - {x: -13.5, y: 21}
+        - {x: -13.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 8.5, y: -23}
+        - {x: 13.5, y: -12}
+        - {x: 13.5, y: 21}
+    - name: EliM_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 23}
+        - {x: -12.5, y: 20}
+        - {x: -12.5, y: -9}
+        - {x: -8.5, y: -21}
+        - {x: -6.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 12.5, y: -11}
+        - {x: 12.5, y: 23}
+    - name: EliM_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 24}
+        - {x: -8.5, y: 24}
+        - {x: -13.5, y: 21}
+        - {x: -13.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 8.5, y: -23}
+        - {x: 13.5, y: -12}
+        - {x: 13.5, y: 21}
+    - name: EliM_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 23}
+        - {x: -12.5, y: 20}
+        - {x: -12.5, y: -14}
+        - {x: -10.5, y: -19}
+        - {x: -3.5, y: -23}
+        - {x: 9.5, y: -23}
+        - {x: 12.5, y: -15}
+        - {x: 12.5, y: 20}
+        - {x: 10.5, y: 23}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
