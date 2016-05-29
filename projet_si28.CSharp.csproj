@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -72,16 +66,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Character.cs" />
-    <Compile Include="Assets\CircularRotation.cs" />
-    <Compile Include="Assets\Dialogs.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\GameScene.cs" />
-    <Compile Include="Assets\GestionCreditUI.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\PlayerData.cs" />
-    <Compile Include="Assets\Resources\Cinematics.cs" />
-    <Compile Include="Assets\SmoothCamera.cs" />
+    <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\Cinematics.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameScene.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\SmoothCamera.cs" />
+    <Compile Include="Assets\Scripts\StoryMgr\Characters.cs" />
+    <Compile Include="Assets\Scripts\StoryMgr\Scenes.cs" />
+    <Compile Include="Assets\Scripts\StoryMgr\StoryManager.cs" />
+    <Compile Include="Assets\Scripts\UI\CircularRotation.cs" />
+    <Compile Include="Assets\Scripts\UI\GestionCreditUI.cs" />
+    <Compile Include="Assets\Scripts\UI\UiController.cs" />
+    <Compile Include="Assets\Scripts\old\Player.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
@@ -162,8 +159,6 @@
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoCameraController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
-    <Compile Include="Assets\TextBox.cs" />
-    <Compile Include="Assets\UiController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\characters.xml" />
