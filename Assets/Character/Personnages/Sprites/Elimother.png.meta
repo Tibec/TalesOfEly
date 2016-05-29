@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 8de8a8b870e8017479a718d2e9249011
+timeCreated: 1464536703
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Elimother_0
+    21300002: Elimother_1
+    21300004: Elimother_2
+    21300006: Elimother_3
+    21300008: Elimother_4
+    21300010: Elimother_5
+    21300012: Elimother_6
+    21300014: Elimother_7
+    21300016: Elimother_8
+    21300018: Elimother_9
+    21300020: Elimother_10
+    21300022: Elimother_11
+    21300024: Elimother_12
+    21300026: Elimother_13
+    21300028: Elimother_14
+    21300030: Elimother_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Elimother_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 22}
+        - {x: -13.5, y: 14}
+        - {x: -13.5, y: -16}
+        - {x: -9.5, y: -22}
+        - {x: -6.5, y: -23}
+        - {x: 9.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 15}
+        - {x: 10.5, y: 22}
+    - name: Elimother_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 21}
+        - {x: -6.5, y: 21}
+        - {x: -13.5, y: 19}
+        - {x: -13.5, y: -11}
+        - {x: -7.5, y: -24}
+        - {x: 2.5, y: -24}
+        - {x: 7.5, y: -23}
+        - {x: 11.5, y: -8}
+        - {x: 11.5, y: 16}
+    - name: Elimother_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 22}
+        - {x: -13.5, y: 14}
+        - {x: -13.5, y: -16}
+        - {x: -9.5, y: -22}
+        - {x: -6.5, y: -23}
+        - {x: 9.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 15}
+        - {x: 10.5, y: 22}
+    - name: Elimother_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 21}
+        - {x: -11.5, y: 16}
+        - {x: -11.5, y: -12}
+        - {x: -10.5, y: -21}
+        - {x: -3.5, y: -24}
+        - {x: 9.5, y: -24}
+        - {x: 13.5, y: -9}
+        - {x: 13.5, y: 15}
+        - {x: 8.5, y: 21}
+    - name: Elimother_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 22}
+        - {x: -11.5, y: 20}
+        - {x: -11.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 11.5, y: 21}
+        - {x: 10.5, y: 22}
+    - name: Elimother_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 21}
+        - {x: -11.5, y: 18}
+        - {x: -11.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 12.5, y: -22}
+        - {x: 12.5, y: 16}
+        - {x: 11.5, y: 21}
+    - name: Elimother_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 22}
+        - {x: -11.5, y: 20}
+        - {x: -11.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 11.5, y: 21}
+        - {x: 10.5, y: 22}
+    - name: Elimother_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 21}
+        - {x: -11.5, y: 21}
+        - {x: -11.5, y: -21}
+        - {x: -6.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 11.5, y: -19}
+        - {x: 11.5, y: 2}
+        - {x: 10.5, y: 17}
+    - name: Elimother_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -12.5, y: 16}
+        - {x: -12.5, y: -3}
+        - {x: -10.5, y: -16}
+        - {x: -8.5, y: -23}
+        - {x: 2.5, y: -23}
+        - {x: 10.5, y: -19}
+        - {x: 10.5, y: 17}
+        - {x: 6.5, y: 22}
+    - name: Elimother_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 21}
+        - {x: -13.5, y: 18}
+        - {x: -13.5, y: -18}
+        - {x: -11.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 10.5, y: -21}
+        - {x: 10.5, y: 20}
+        - {x: 6.5, y: 21}
+    - name: Elimother_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -12.5, y: 16}
+        - {x: -12.5, y: -3}
+        - {x: -10.5, y: -16}
+        - {x: -8.5, y: -23}
+        - {x: 2.5, y: -23}
+        - {x: 10.5, y: -19}
+        - {x: 10.5, y: 17}
+        - {x: 6.5, y: 22}
+    - name: Elimother_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 21}
+        - {x: -12.5, y: 14}
+        - {x: -12.5, y: -18}
+        - {x: -5.5, y: -23}
+        - {x: 6.5, y: -23}
+        - {x: 10.5, y: -22}
+        - {x: 10.5, y: 15}
+        - {x: 6.5, y: 21}
+    - name: Elimother_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 22}
+        - {x: -13.5, y: 16}
+        - {x: -13.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 11}
+        - {x: 9.5, y: 22}
+    - name: Elimother_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 21}
+        - {x: -11.5, y: 20}
+        - {x: -12.5, y: 15}
+        - {x: -12.5, y: -13}
+        - {x: -7.5, y: -23}
+        - {x: 2.5, y: -23}
+        - {x: 7.5, y: -22}
+        - {x: 12.5, y: -15}
+        - {x: 12.5, y: 18}
+        - {x: 7.5, y: 21}
+    - name: Elimother_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 22}
+        - {x: -13.5, y: 16}
+        - {x: -13.5, y: -14}
+        - {x: -8.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 11}
+        - {x: 9.5, y: 22}
+    - name: Elimother_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 21}
+        - {x: -12.5, y: 14}
+        - {x: -12.5, y: -13}
+        - {x: -5.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 12.5, y: -18}
+        - {x: 12.5, y: 17}
+        - {x: 8.5, y: 21}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

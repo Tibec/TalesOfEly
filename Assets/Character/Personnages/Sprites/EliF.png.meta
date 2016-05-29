@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 9a6217b326f94214fb284afb13097a63
+timeCreated: 1464534174
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EliF_0
+    21300002: EliF_1
+    21300004: EliF_2
+    21300006: EliF_3
+    21300008: EliF_4
+    21300010: EliF_5
+    21300012: EliF_6
+    21300014: EliF_7
+    21300016: EliF_8
+    21300018: EliF_9
+    21300020: EliF_10
+    21300022: EliF_11
+    21300024: EliF_12
+    21300026: EliF_13
+    21300028: EliF_14
+    21300030: EliF_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EliF_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -13.5, y: 15}
+        - {x: -13.5, y: -13}
+        - {x: -6.5, y: -23}
+        - {x: 8.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 10}
+        - {x: 9.5, y: 24}
+    - name: EliF_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 23}
+        - {x: -12.5, y: 15}
+        - {x: -12.5, y: -15}
+        - {x: -9.5, y: -22}
+        - {x: -6.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 11.5, y: -15}
+        - {x: 11.5, y: 15}
+        - {x: 9.5, y: 23}
+    - name: EliF_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -13.5, y: 15}
+        - {x: -13.5, y: -13}
+        - {x: -6.5, y: -23}
+        - {x: 8.5, y: -23}
+        - {x: 13.5, y: -16}
+        - {x: 13.5, y: 10}
+        - {x: 9.5, y: 24}
+    - name: EliF_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23}
+        - {x: -11.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 9.5, y: -21}
+        - {x: 12.5, y: -14}
+        - {x: 12.5, y: 11}
+        - {x: 9.5, y: 23}
+    - name: EliF_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 22}
+        - {x: -12.5, y: 17}
+        - {x: -12.5, y: -6}
+        - {x: -10.5, y: -20}
+        - {x: -4.5, y: -23}
+        - {x: 3.5, y: -23}
+        - {x: 10.5, y: -22}
+        - {x: 10.5, y: 20}
+        - {x: 7.5, y: 22}
+    - name: EliF_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 21}
+        - {x: -12.5, y: 21}
+        - {x: -12.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 10.5, y: 17}
+    - name: EliF_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 22}
+        - {x: -12.5, y: 17}
+        - {x: -12.5, y: -6}
+        - {x: -10.5, y: -20}
+        - {x: -4.5, y: -23}
+        - {x: 3.5, y: -23}
+        - {x: 10.5, y: -22}
+        - {x: 10.5, y: 20}
+        - {x: 7.5, y: 22}
+    - name: EliF_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 21}
+        - {x: -12.5, y: 16}
+        - {x: -12.5, y: -13}
+        - {x: -11.5, y: -21}
+        - {x: -7.5, y: -23}
+        - {x: 3.5, y: -23}
+        - {x: 10.5, y: -18}
+        - {x: 10.5, y: 18}
+        - {x: 4.5, y: 21}
+    - name: EliF_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -11.5, y: 21}
+        - {x: -11.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 11.5, y: -6}
+        - {x: 11.5, y: 20}
+        - {x: 9.5, y: 22}
+    - name: EliF_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 21}
+        - {x: -11.5, y: 20}
+        - {x: -11.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 11.5, y: -22}
+        - {x: 11.5, y: 21}
+    - name: EliF_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -11.5, y: 21}
+        - {x: -11.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 11.5, y: -6}
+        - {x: 11.5, y: 20}
+        - {x: 9.5, y: 22}
+    - name: EliF_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 21}
+        - {x: -11.5, y: 20}
+        - {x: -11.5, y: -17}
+        - {x: -3.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 11.5, y: 19}
+        - {x: 9.5, y: 21}
+    - name: EliF_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -13.5, y: 23}
+        - {x: -13.5, y: -11}
+        - {x: -8.5, y: -20}
+        - {x: -6.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 13.5, y: -15}
+        - {x: 13.5, y: 18}
+        - {x: 7.5, y: 24}
+    - name: EliF_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 23}
+        - {x: -7.5, y: 23}
+        - {x: -12.5, y: 16}
+        - {x: -12.5, y: -9}
+        - {x: -9.5, y: -22}
+        - {x: -5.5, y: -23}
+        - {x: 5.5, y: -23}
+        - {x: 10.5, y: -20}
+        - {x: 12.5, y: -12}
+        - {x: 12.5, y: 19}
+    - name: EliF_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -13.5, y: 23}
+        - {x: -13.5, y: -11}
+        - {x: -8.5, y: -20}
+        - {x: -6.5, y: -23}
+        - {x: 7.5, y: -23}
+        - {x: 13.5, y: -15}
+        - {x: 13.5, y: 18}
+        - {x: 7.5, y: 24}
+    - name: EliF_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 23}
+        - {x: -12.5, y: -18}
+        - {x: -5.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 12.5, y: -15}
+        - {x: 12.5, y: 18}
+        - {x: 6.5, y: 23}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

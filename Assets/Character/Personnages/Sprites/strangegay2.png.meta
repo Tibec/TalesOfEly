@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: a10d10a8b2aae7a4c82738361bbaa65d
+timeCreated: 1464536770
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: strangegay2_0
+    21300002: strangegay2_1
+    21300004: strangegay2_2
+    21300006: strangegay2_3
+    21300008: strangegay2_4
+    21300010: strangegay2_5
+    21300012: strangegay2_6
+    21300014: strangegay2_7
+    21300016: strangegay2_8
+    21300018: strangegay2_9
+    21300020: strangegay2_10
+    21300022: strangegay2_11
+    21300024: strangegay2_12
+    21300026: strangegay2_13
+    21300028: strangegay2_14
+    21300030: strangegay2_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: strangegay2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -13.5, y: 18}
+        - {x: -16.5, y: 8}
+        - {x: -16.5, y: -17}
+        - {x: -10.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 20}
+        - {x: 7.5, y: 24}
+    - name: strangegay2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 23}
+        - {x: -15.5, y: 14}
+        - {x: -16.5, y: 9}
+        - {x: -16.5, y: -17}
+        - {x: -10.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 10.5, y: -21}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 17}
+        - {x: 6.5, y: 23}
+    - name: strangegay2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -13.5, y: 18}
+        - {x: -16.5, y: 8}
+        - {x: -16.5, y: -17}
+        - {x: -10.5, y: -23}
+        - {x: 10.5, y: -23}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 20}
+        - {x: 7.5, y: 24}
+    - name: strangegay2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 23}
+        - {x: -5.5, y: 23}
+        - {x: -15.5, y: 18}
+        - {x: -16.5, y: 15}
+        - {x: -16.5, y: -18}
+        - {x: -6.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 16.5, y: -17}
+        - {x: 16.5, y: 8}
+        - {x: 15.5, y: 14}
+    - name: strangegay2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 23}
+        - {x: -11.5, y: 23}
+        - {x: -14.5, y: 20}
+        - {x: -14.5, y: 6}
+        - {x: -10.5, y: -17}
+        - {x: -3.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 16.5, y: -18}
+        - {x: 16.5, y: 20}
+    - name: strangegay2_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 22}
+        - {x: -12.5, y: 22}
+        - {x: -14.5, y: 20}
+        - {x: -14.5, y: -20}
+        - {x: -8.5, y: -23}
+        - {x: 15.5, y: -23}
+        - {x: 16.5, y: -22}
+        - {x: 16.5, y: 12}
+        - {x: 15.5, y: 19}
+    - name: strangegay2_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 23}
+        - {x: -11.5, y: 23}
+        - {x: -14.5, y: 20}
+        - {x: -14.5, y: 6}
+        - {x: -10.5, y: -17}
+        - {x: -3.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 16.5, y: -18}
+        - {x: 16.5, y: 20}
+    - name: strangegay2_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 22}
+        - {x: -8.5, y: 22}
+        - {x: -14.5, y: 19}
+        - {x: -14.5, y: -9}
+        - {x: -12.5, y: -20}
+        - {x: -11.5, y: -23}
+        - {x: 11.5, y: -23}
+        - {x: 16.5, y: -19}
+        - {x: 16.5, y: -4}
+        - {x: 13.5, y: 17}
+    - name: strangegay2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 23}
+        - {x: -16.5, y: 14}
+        - {x: -16.5, y: -20}
+        - {x: -13.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 13.5, y: -9}
+        - {x: 13.5, y: 18}
+        - {x: 6.5, y: 23}
+      - - {x: 13.5, y: -15}
+        - {x: 15.5, y: -17}
+        - {x: 16.5, y: -17}
+        - {x: 16.5, y: -11}
+        - {x: 13.5, y: -12}
+    - name: strangegay2_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 22}
+        - {x: -15.5, y: 18}
+        - {x: -16.5, y: 12}
+        - {x: -16.5, y: -20}
+        - {x: -12.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 13.5, y: 22}
+      - - {x: 13.5, y: -16}
+        - {x: 15.5, y: -18}
+        - {x: 16.5, y: -18}
+        - {x: 16.5, y: -11}
+        - {x: 13.5, y: -12}
+    - name: strangegay2_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 23}
+        - {x: -16.5, y: 14}
+        - {x: -16.5, y: -20}
+        - {x: -13.5, y: -22}
+        - {x: -9.5, y: -23}
+        - {x: 4.5, y: -23}
+        - {x: 13.5, y: -9}
+        - {x: 13.5, y: 18}
+        - {x: 6.5, y: 23}
+      - - {x: 13.5, y: -17}
+        - {x: 15.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 16.5, y: -11}
+        - {x: 13.5, y: -12}
+    - name: strangegay2_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -16.5, y: 14}
+        - {x: -16.5, y: -22}
+        - {x: -15.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 13.5, y: 20}
+        - {x: 7.5, y: 22}
+    - name: strangegay2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 24}
+        - {x: -16.5, y: 6}
+        - {x: -16.5, y: -23}
+        - {x: 16.5, y: -23}
+        - {x: 16.5, y: 9}
+        - {x: 12.5, y: 24}
+    - name: strangegay2_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 23}
+        - {x: -8.5, y: 23}
+        - {x: -13.5, y: 13}
+        - {x: -15.5, y: 0}
+        - {x: -15.5, y: -16}
+        - {x: -8.5, y: -23}
+        - {x: 13.5, y: -23}
+        - {x: 15.5, y: -17}
+        - {x: 15.5, y: 7}
+        - {x: 14.5, y: 13}
+    - name: strangegay2_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 24}
+        - {x: -16.5, y: 6}
+        - {x: -16.5, y: -23}
+        - {x: 16.5, y: -23}
+        - {x: 16.5, y: 9}
+        - {x: 12.5, y: 24}
+    - name: strangegay2_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1.5
+        width: 32.5
+        height: 48.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 23}
+        - {x: -10.5, y: 23}
+        - {x: -15.5, y: 20}
+        - {x: -15.5, y: -23}
+        - {x: 8.5, y: -23}
+        - {x: 15.5, y: -17}
+        - {x: 15.5, y: 5}
+        - {x: 14.5, y: 14}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
