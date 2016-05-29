@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
 	public Camera cam;
 
 	private Scene scene;
-	private
+	private int step;
 	// Use this for initialization
 	void Start () {
 		// Retrieve game data
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 
 		// Get current scene content
 		scene = StoryManager.Instance.GetScene(PlayerData.Instance.Scene);
-
+		step = 0;
 		// Move the camera far away
 		cam.transform.position = new Vector3 (-50, -50, -10);
 
