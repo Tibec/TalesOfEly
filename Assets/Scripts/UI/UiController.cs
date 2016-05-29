@@ -67,11 +67,13 @@ public class UiController : tk2dUIBaseDemoController {
 			Application.Quit ();
 		} else if (btn.name == maleBtn.name) {
 			PlayerData.Instance.Avatar = PlayerData.AvatarType.Male;
+			PlayerData.Instance.Scene = 0;
 			UnityEngine.SceneManagement.SceneManager.LoadScene("colline");
 			AnimateHideWindow(charSelectWindow.transform);
 		} else if (btn.name == femaleBtn.name) {
 			AnimateHideWindow(charSelectWindow.transform);
 			PlayerData.Instance.Avatar = PlayerData.AvatarType.Female;
+			PlayerData.Instance.Scene = 0;
 			UnityEngine.SceneManagement.SceneManager.LoadScene("colline");
 		} else if (btn.name == creditBtn.name) {
 			// Load credit scene

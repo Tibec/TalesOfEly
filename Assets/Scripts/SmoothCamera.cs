@@ -16,7 +16,6 @@ public class SmoothCamera : MonoBehaviour {
 		tkcamera = GetComponent<tk2dCamera>();
 	}
 	void FixedUpdate () {
-		Debug.Log (tkcamera.ScreenExtents.height);
 		Vector3 p0 = map.data.tileOrigin; //Get the lower left extent of the tile map.
 		Vector3 p1 = new Vector3(p0.x + map.width, p0.y + map.height, 0.0f); //Now get the upper right extent of the tile map.
 		float w = tkcamera.ScreenExtents.width ; //Get the width of the screen. If you have no intention to zoom the camera, move these

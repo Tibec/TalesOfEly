@@ -7,7 +7,7 @@
 		<char id='3' face="z.png" >Luke</char>
 	</characters>
 	<scenes>
-		<scene id='1' map="village">
+		<scene id='0' map="colline">
 			<content>
 				<cinematic id='1'>
 				</cinematic>

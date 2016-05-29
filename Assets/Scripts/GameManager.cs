@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-/*
+using Entities;
+
 public class GameManager : MonoBehaviour {
 
 	public Camera cam;
 
-	private GameScene scene;
-
+	private Scene scene;
+	private
 	// Use this for initialization
 	void Start () {
 		// Retrieve game data
-		data = PlayerData.Instance;
+		//data = PlayerData.Instance;
 
 		// Get current scene content
-		scene = Story.GetScene(PlayerData.Instance.currentScene);
+		scene = StoryManager.Instance.GetScene(PlayerData.Instance.Scene);
 
 		// Move the camera far away
 		cam.transform.position = new Vector3 (-50, -50, -10);
@@ -24,17 +25,18 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (scene.Map != UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name) {
-			UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (scene.map);
+		if (scene != null) {
+			if (scene.Map != UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name) {
+				UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (scene.Map);
+			}
 		}
 	}
 
 	void LoadCharacters() {
-		Character[] chars;// = scene.GetCharacters ();
+		/*Character[] chars;// = scene.GetCharacters ();
 		foreach(Character c in chars)
 		{
 			// Instanciate everyprefabs
-		}
+		}*/
 	}
 }
-*/

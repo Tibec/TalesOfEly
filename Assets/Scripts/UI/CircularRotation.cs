@@ -21,8 +21,6 @@ public class CircularRotation : MonoBehaviour {
 		after.x = now.x * c - now.y * s;
 		after.y = now.x * s + now.y * c;
 
-		Debug.Log (after);
-
 		after += pivot;
 		this.transform.position = after;
 	}
