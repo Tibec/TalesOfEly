@@ -1,11 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TextBox.cs">
     <Files>
-      <File FileName="Assets\TextBox.cs" Line="237" Column="5" />
-      <File FileName="Assets\Resources\dialogs.xml" Line="1" Column="1" />
-      <File FileName="Assets\Resources\characters.xml" Line="1" Column="1" />
-      <File FileName="Assets\Resources\scenarios.xml" Line="1" Column="1" />
+      <File FileName="Assets\TextBox.cs" Line="20" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
