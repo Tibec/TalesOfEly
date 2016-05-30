@@ -69,16 +69,16 @@ namespace Entities
 
 	public class Choice : System.Attribute
 	{
-		private string next_scene;
+		private int next_scene;
 		private string text;
 
 
-		public Choice(string ns, string t){
+		public Choice(int ns, string t){
 			next_scene = ns;
 			text = t;
 		}
 
-		public string get_next_scene(){
+		public int get_next_scene(){
 			return next_scene;
 		}
 

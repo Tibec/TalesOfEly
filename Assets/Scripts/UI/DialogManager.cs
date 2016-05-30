@@ -10,6 +10,7 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	public GameObject textBox;
 	public tk2dTextMesh textContainer;
+	public tk2dTextMesh speakerTextContainer;
 
 	////////////////////////////////////////////
 	private List<string> speakers;
@@ -17,19 +18,21 @@ public class DialogManager : tk2dUIBaseDemoController {
 	private int currentText;
 	private bool finished;
 
+	private int charPerLine = 255;
+
 	public DialogManager()
 	{
-		texts = new List<string> ();
-		speakers = new List<string> ();
-		finished = false;
+		Reset ();
 	}
 
 	public void OnEnable()
 	{
-		Debug.Log (texts.Count);
 		// Affichage + bind event
 		currentText = 0;
-		textContainer.text = texts[0].Substring (0, (texts[0].Length < 42 ? texts[0].Length : 42));
+		if (texts.Count > 0) {
+			textContainer.text = texts [0].Substring (0, (texts [0].Length < charPerLine ? texts [0].Length : charPerLine));
+			speakerTextContainer.text = speakers [0];
+		}
 	}
 
 	public void OnMouseDown()
@@ -40,6 +43,7 @@ public class DialogManager : tk2dUIBaseDemoController {
 			finished = true;
 		} else {
 			textContainer.text = texts [currentText];
+			speakerTextContainer.text = speakers [currentText];
 		}
 	}
 
@@ -50,28 +54,19 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	public void AddDialog (string _text, string _speaker, string _face)
 	{
-		Debug.Log ("Coc");
 		speakers.Add( _speaker);
-
 		// Formatage du text
-		string format = "";
-		string remain = _text;
-		while (remain.Length > 42) {
-			format += remain.Substring (0, 42);
-			format += "\n";
-			remain = remain.Substring (42);
-		}
-		format += remain;
-		Debug.Log (format);
-		_text = format;
-		while (_text.Length > 2 * 42) {
+		_text = _text.Trim().Replace("\n", "");
+		Debug.Log (_text);
+		int offset = 0;
+		/*while (_text.Length > 2 * (charPerLine+1)) {
 			speakers.Add( _speaker);
-			texts.Add(_text.Substring (0, 84));
-			_text = _text.Substring (84);
-		}
+			texts.Add(_text.Substring (offset, 2*(charPerLine+1)));
+			offset += 2 *( charPerLine+1);
+			_text = _text.Substring (charPerLine);
+		}*/
 
 		texts.Add(_text);
-
 	}
 
 	private void HandleNext(tk2dUIItem btn)
@@ -82,6 +77,13 @@ public class DialogManager : tk2dUIBaseDemoController {
 	public bool IsFinished()
 	{
 		return finished;
+	}
+
+	public void Reset()
+	{
+		texts = new List<string> ();
+		speakers = new List<string> ();
+		finished = false;
 	}
 
 	// Update is called once per frame

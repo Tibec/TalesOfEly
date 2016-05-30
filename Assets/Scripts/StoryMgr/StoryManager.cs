@@ -145,7 +145,7 @@ public class StoryManager {
 				foreach (XElement p in choices_s)
 				{
 					//Console.WriteLine ("---------------------------Parsing part-----------------------");
-					Choice choi = new Choice((string)p.Attribute("goto"), (p.FirstNode as XText).Value);
+					Choice choi = new Choice((int)p.Attribute("goto"), (p.FirstNode as XText).Value);
 					l_choices.Add(choi);
 				}
 				//Console.WriteLine ("---------------------------Parsing Dialog------------------------------");

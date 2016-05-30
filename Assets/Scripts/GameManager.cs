@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour {
 
 	public Camera cam;
 	public GameObject dialogUI;
+	public GameObject choiceUI;
 	public DialogManager dialogUiScript;
+	public ChoiceManager choiceUiScript;
 
 	private Scene scene;
 	private int step;
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Reset ();
+		LoadCharacters ();
 	}
 
 	// Update is called once per frame
@@ -28,42 +31,62 @@ public class GameManager : MonoBehaviour {
 			if (stepInProgress == false) {
 				stepInProgress = true;
 				// On doit demarre la nouvelle étape de la scene
-				if (step == scene.Content.Count) {
-					PlayerData.Instance.Scene++;
+				if (step > scene.Content.Count) {
 					Reset ();
-				}
-				Content c = scene.Content [step];
-				if (c.get_type () == content_type.DIALOG) {
-					// Load Dialog
-					foreach (Part p in c.Parts) {
-						Character charData = StoryManager.Instance.GetCharacter (p.Char);
-						dialogUiScript.AddDialog (p.Text, charData.Name, "noface");
-					}
-					// Show up the UI
-					dialogUI.SetActive (true);
+					return;
+				} else if (step == scene.Content.Count) { // On affiche les choix
+					dialogUI.SetActive (false);
+					choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
+					choiceUI.SetActive (true);
+				} else {
 
-				} else if (c.get_type () == content_type.CHOICE) {
-				
-				} else { // (c.get_type () == content_type.CINEMATIC) 
-				
+					Content c = scene.Content [step];
+					if (c.get_type () == content_type.DIALOG) {
+						// Load Dialog
+						foreach (Part p in c.Parts) {
+							Character charData = StoryManager.Instance.GetCharacter (p.Char);
+							dialogUiScript.AddDialog (p.Text, charData.Name, "noface");
+						}
+						// Show up the UI
+						dialogUI.SetActive (true);
+
+						//} else if (c.get_type () == content_type.CHOICE) {
+						// TODO
+					} else { // (c.get_type () == content_type.CINEMATIC) 
+						//TODO
+						// FIXME
+						step++;
+						stepInProgress = false;
+					}
 				}
 					
 			} else {
-				// check if the current scene item is finished 
-				Content c = scene.Content [step];
-				if (c.get_type () == content_type.DIALOG) {
-					// Show up the UI
-					if (dialogUiScript.IsFinished ()) {
-						dialogUI.SetActive (false);
-						stepInProgress = false;
+				// check if we ask for choices
+				if (step == scene.Content.Count) {
+					Debug.Log (choiceUiScript.GetChoice ());
+					if (choiceUiScript.GetChoice () != -1) {
+						PlayerData.Instance.Scene = scene.Choices [choiceUiScript.GetChoice ()].get_next_scene ();
 						step++;
+						stepInProgress = false;
+						choiceUI.SetActive (false);
 					}
-				} else if (c.get_type () == content_type.CHOICE) {
+				} else {
+					// check if the current scene item is finished 
+					Content c = scene.Content [step];
+					if (c.get_type () == content_type.DIALOG) {
+						// Show up the UI
+						if (dialogUiScript.IsFinished ()) {
+							dialogUI.SetActive (false);
+							dialogUiScript.Reset ();
+							stepInProgress = false;
+							step++;
+						}
+					} else if (c.get_type () == content_type.CHOICE) {
 
-				} else { // (c.get_type () == content_type.CINEMATIC) 
+					} else { // (c.get_type () == content_type.CINEMATIC) 
 
+					}
 				}
-
 			}
 								
 		}
@@ -84,7 +107,8 @@ public class GameManager : MonoBehaviour {
 		// Move the camera far away
 		cam.transform.position = new Vector3 (-50, -50, -50);
 
-		LoadCharacters ();
+
+		Debug.Log ("Debut de la scene : " + scene.Id);
 	}
 
 	void LoadCharacters() {

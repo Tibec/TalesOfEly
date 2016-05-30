@@ -48,12 +48,12 @@
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\Cinematics.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\GameScene.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera.cs" />
      <Compile Include="Assets\Scripts\StoryMgr\Characters.cs" />
      <Compile Include="Assets\Scripts\StoryMgr\Scenes.cs" />
      <Compile Include="Assets\Scripts\StoryMgr\StoryManager.cs" />
+     <Compile Include="Assets\Scripts\UI\ChoiceManager.cs" />
      <Compile Include="Assets\Scripts\UI\CircularRotation.cs" />
      <Compile Include="Assets\Scripts\UI\DialogManager.cs" />
      <Compile Include="Assets\Scripts\UI\GestionCreditUI.cs" />
