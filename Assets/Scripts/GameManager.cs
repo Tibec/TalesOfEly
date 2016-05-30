@@ -34,10 +34,14 @@ public class GameManager : MonoBehaviour {
 				if (step > scene.Content.Count) {
 					Reset ();
 					return;
-				} else if (step == scene.Content.Count) { // On affiche les choix
-					dialogUI.SetActive (false);
-					choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
-					choiceUI.SetActive (true);
+				} else if (step == scene.Content.Count) { // On affiche les choi
+					if (scene.Choices == null) { // Alors on est a la fin :(
+						UnityEngine.SceneManagement.SceneManager.LoadSceneAsync ("credit");
+					} else {
+						dialogUI.SetActive (false);
+						choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
+						choiceUI.SetActive (true);
+					}
 				} else {
 
 					Content c = scene.Content [step];

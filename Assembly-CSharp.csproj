@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\Cinematics.cs" />
+     <Compile Include="Assets\Scripts\Debug\InjectValue.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Scripts\SmoothCamera.cs" />

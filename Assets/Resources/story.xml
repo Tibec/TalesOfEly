@@ -73,7 +73,7 @@
 			<content>
 				<cinematic id='2' />
 				<dialog>
-				<part char='0'> S’enfonçant dans la forêt, il n’en retrouvent aucune et remarque que la forêt est particulièrement silencieuse. Il se pose progressivement des questions sur cette forêt:</part>
+					<part char='0'> S’enfonçant dans la forêt, il n’en retrouvent aucune et remarque que la forêt est particulièrement silencieuse. Il se pose progressivement des questions sur cette forêt:</part>
 					<part char='1'>(voix tremblante)Pourquoi est-elle interdite?</part>
 					<part char='1'>(voix tremblante)Que dit la légende, déjà?</part>
 					<part char='0'>(Grand père du village)Il y a très, très longtemps, la forêt d'Yggdrasil était occupée par des créatures fantastiques, vampires, phénix, goules.</part>
@@ -122,7 +122,7 @@
     
 	    <scene id='9' fin="true" map="colline">
 			<content>
-					<cinematic id='2' />
+				<cinematic id='2' />
 				<dialog>
 					<part char='4'>Tu m'en vois navré, jeune homme. Soit, si telle est ta décision</part>
 					<part char='1'>Je suis désolé, ce monde n'est pas le mien... J'ai une famille de l'autre côté. Cependant si par hasard vous les avez vus, je souhaite ramener mes chèvres avec moi.</part>

@@ -37,7 +37,6 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	public void OnMouseDown()
 	{
-		Debug.Log ("Heeey");
 		currentText++;
 		if (currentText == texts.Count) {
 			finished = true;

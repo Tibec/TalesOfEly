@@ -49,11 +49,14 @@ public class ChoiceManager : tk2dUIBaseDemoController {
 
 	public int GetChoice()
 	{
+		Debug.Log ("lmao we clicked didnt we");
+
 		return selected;
 	}
 
 	private void HandleClick(tk2dUIItem btn)
 	{
+		Debug.Log ("lmao we clicked didnt we");
 		if (btn == choix1) {
 			selected = 0;
 		} else {
