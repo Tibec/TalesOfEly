@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 
 public class Cinematics 
-{
+{       
 	private tk2dCamera camera;
 
 
@@ -23,11 +23,12 @@ public class Cinematics
 	{
 		/*
 		 	Camera.SetPosition(x, y)
-			FadeCamera();
-			LoadCharacter(xx, posX, posY);
-			MoveCharacter(xx, A, B);
-			AttachCameraToCharacter(x);
-			
+		 	Camera.Move(x, y)
+			Char1.Move(A, B, WALK/RUN/TELEPORT);
+			PlaySound("mname");
+			PlayEffect("sfx");
+			StopSound();
+
 		*/
 	}
 }

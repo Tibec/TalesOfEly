@@ -14,8 +14,12 @@ public class GameManager : MonoBehaviour {
 	private Scene scene;
 	private int step;
 	private bool stepInProgress;
+
+	private AudioSource soundPlr;
+
 	// Use this for initialization
 	void Start () {
+		soundPlr = GetComponent<AudioSource> ();
 		Reset ();
 		LoadCharacters ();
 	}
@@ -30,11 +34,10 @@ public class GameManager : MonoBehaviour {
 
 			if (stepInProgress == false) {
 				stepInProgress = true;
-				// On doit demarre la nouvelle étape de la scene
-				if (step > scene.Content.Count) {
+				if (step > scene.Content.Count) { // On doit demarre la nouvelle étape de la scene
 					Reset ();
 					return;
-				} else if (step == scene.Content.Count) { // On affiche les choi
+				} else if (step == scene.Content.Count) { // On affiche les choix
 					if (scene.Choices == null) { // Alors on est a la fin :(
 						UnityEngine.SceneManagement.SceneManager.LoadSceneAsync ("credit");
 					} else {
@@ -42,8 +45,7 @@ public class GameManager : MonoBehaviour {
 						choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
 						choiceUI.SetActive (true);
 					}
-				} else {
-
+				} else { // Tratiement de l'étape
 					Content c = scene.Content [step];
 					if (c.get_type () == content_type.DIALOG) {
 						// Load Dialog
@@ -54,8 +56,6 @@ public class GameManager : MonoBehaviour {
 						// Show up the UI
 						dialogUI.SetActive (true);
 
-						//} else if (c.get_type () == content_type.CHOICE) {
-						// TODO
 					} else { // (c.get_type () == content_type.CINEMATIC) 
 						//TODO
 						// FIXME
