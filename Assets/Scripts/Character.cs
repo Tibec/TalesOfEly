@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-/*
+
+namespace Manipulable {
+	
 public class Character : MonoBehaviour {
 
 	private Transform currentPoint;
-
+	private tk2dSpriteAnimator animation;
 
 	//
 
 	private Vector2 destination;
-
-
-	public Character()
 
 	// Use this for initialization
 	public void Start () {
@@ -21,9 +20,9 @@ public class Character : MonoBehaviour {
 	// Update is called once per frame
 	public void Update () {
 		// Should we move ?
-		if (currentPoint.position != destination) {
+		//if (currentPoint.position != destination) {
 			// Faire calcul de déplacement selon vitese
-		}
+		//}
 
 
 	}
@@ -48,4 +47,5 @@ public class Character : MonoBehaviour {
 		destination.y = y;
 	}
 }
-*/
+
+}
