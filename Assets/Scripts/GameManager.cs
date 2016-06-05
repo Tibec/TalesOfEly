@@ -6,8 +6,7 @@ using Entities;
 
 public class GameManager : MonoBehaviour {
 
-	public tk2dCamera cam; //Temporary Fix
-    //public Camera cam; 
+    public tk2dCamera cam; 
     public GameObject dialogUI;
 	public GameObject choiceUI;
 	public DialogManager dialogUiScript;
