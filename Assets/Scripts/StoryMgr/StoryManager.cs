@@ -22,8 +22,10 @@ public class StoryManager {
 
 	public Scene GetScene(int id) {
 		foreach (Scene s in scenes) {
-			if (s.Id == id)
+			if (s.Id == id) {
+				Debug.Log (s.Map);
 				return s;
+			}
 		}
 		throw new Exception ("Cannot found scene id :" + id);
 	}

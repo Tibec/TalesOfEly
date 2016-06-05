@@ -5,7 +5,7 @@
 	<char id='1' face="" >Ely</char>
 	<char id='2' face="ElyMother.psd" >Mère d'Ely</char>
     <char id='3' face="Elfe.png" >Elfe</char>
-    <char id='6' face="z.psd" >Tous les elfes</char>
+    <char id='6' face="Elfe.png" >Tous les elfes</char>
 	<char id='4' face="vieux elfe.psd" >Le grand-père</char>
     <char id='5' face="chevre.png" >Chèvre</char>
 	</characters>
@@ -251,7 +251,7 @@
 					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
 				</dialog>
 			</content>
-		</scene>
+		</scene> 
 
 	</scenes>
 </story>
