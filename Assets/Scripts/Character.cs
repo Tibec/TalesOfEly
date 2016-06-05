@@ -19,7 +19,7 @@ namespace Manipulable {
 
 
 	public class Character : MonoBehaviour {
-		private float walkSpeed = 0.1f;
+		private float walkSpeed = 0.03f;
 		private float runSpeed = 0.1f;
 		private Transform transform;
 		private tk2dSpriteAnimator anims;

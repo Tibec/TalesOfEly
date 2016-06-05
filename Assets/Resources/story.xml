@@ -15,7 +15,7 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-     		  <part char='0'>Cette histoire commence dans le village d'Yggdrasil. Notre personnage principal Ely, jeune fermier qui surveille son troupeau de chèvres.</part>
+     		  		<part char='0'>Cette histoire commence dans le village d'Yggdrasil. Notre personnage principal Ely, jeune fermier qui surveille son troupeau de chèvres.</part>
 					<part char='1'>C'est le milieu de l'après-midi. Il fait beau, l'air est frais. je ferai bien un petit somme …</part>
 				</dialog>
 			</content>

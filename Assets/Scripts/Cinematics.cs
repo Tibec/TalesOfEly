@@ -9,10 +9,18 @@ using SoundManager;
 
 public class Cinematics 
 {   
+
+	class Instruction {
+
+	};
+
 	// Tuning options
 	private float camSpeed;
-	private float playerSpeed;
 
+	//
+	int camMode; // 0 = immobile ; 1 = en déplacement ; 2 = follow
+	Vector2 destination;
+	Manipulable.Character target;
 
 	// Accesseur des composants de la scene;
 	private tk2dCamera camera;
@@ -24,19 +32,23 @@ public class Cinematics
 		get { return !finished; }
 	}
 
-
+	Queue<Instruction> ins;
 
 	public void Init(tk2dCamera _camera, List<GameObject> _chars, AudioMgr mgr)
 	{
 		camera = _camera;
 		chars = _chars;
+		camMode = 0;
+		ins = new Queue<Instruction> ();
 	}
 
 	public void Update()
 	{
-		// Géré mouvement de la camera
-
-		// Utiliser Vector3.Lerp (+ d'info dans le code de smoothcamera.cs)
+		if (ins.Count == 0 ) {
+			finished = true;
+			return;
+		}
+		
 
 	}
 
@@ -49,39 +61,8 @@ public class Cinematics
 		function.Invoke (this, null);
 	}
 
-	private void TeleportCamera(int x, int y)
-	{
-        SmoothCamera script = camera.GetComponent<SmoothCamera>();
-        Vector2 now = new Vector2(x, y);
-        camera.transform.position = now;
-        script.follow.position = now;
 
-    }
-
-	private void MoveCamera(int x, int y, float speed)
-	{
-
-	}
-
-	private void CameraFollow(Manipulable.Character c, float speed)
-	{
-       SmoothCamera script = camera.GetComponent<SmoothCamera>();
-        script.follow.position = GetGameObjectByCharacter(c).transform.position;
-	}
-
-    private GameObject GetGameObjectByCharacter(Manipulable.Character c)
-    {
-        foreach(GameObject g in chars)
-        {
-            if(g.GetComponent<Manipulable.Character>() == c)
-            {
-                return g;
-            }
-        }
-        throw new Exception("Le personnage n'existe pas");
-    }
-
-    private Manipulable.Character GetCharacterByName(string name)
+	private Manipulable.Character GetCharacterByName( string name)
 	{
 		foreach (GameObject g in chars) {
 			if (g.name == name) {
@@ -108,10 +89,13 @@ public class Cinematics
 	private void play_colline_1()
 	{
 		Debug.Log ("Début cinematique");
-		Manipulable.Character c = GetCharacterByName ("ElyM");
+		Manipulable.Character c = GetCharacterByName ( "ElyM");
 		c.TeleportTo (15, 5);
-		c.RunTo (15, 15, Orientation.UP);
-		c.RunTo (35, 15, Orientation.RIGTH);
+		c.WalkTo (15, 15, Orientation.UP);
+		c.WalkTo (35, 15, Orientation.RIGTH);
+		camera.ZoomFactor = 3;
+		camera.transform.position = new Vector3 (15, 0, -50);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
 
 	}
 }

@@ -11,13 +11,17 @@ public class SmoothCamera : MonoBehaviour {
 	public 	int tileSize = 16; //the size of your tiles.
 	public 	float adjustement = 1.3f; //correction
 	public  float cameraPrecision = 200f;
+	private Transform focusPoint;
+
 
 	void Start () {
 		tkcamera = GetComponent<tk2dCamera>();
+		focusPoint = follow;
 	}
 	void FixedUpdate () {
 		Vector3 p0 = map.data.tileOrigin; //Get the lower left extent of the tile map.
 		Vector3 p1 = new Vector3(p0.x + map.width, p0.y + map.height, 0.0f); //Now get the upper right extent of the tile map.
+
 		float w = tkcamera.ScreenExtents.width ; //Get the width of the screen. If you have no intention to zoom the camera, move these
 		float h = tkcamera.ScreenExtents.height; //into the Start() method so that you only get them once. If you zoom in and out though, you want to read it every time.
 		transform.position = RoundCoordinate(Vector3.Lerp(
@@ -35,10 +39,23 @@ public class SmoothCamera : MonoBehaviour {
 			), smoothing * Time.deltaTime)); //Apply our smoothing factor to the lerp..
 	}
 
-	public Vector3 RoundCoordinate(Vector3 coord)
+	public void MoveTo(int x, int y)
 	{
-		coord.x = Mathf.Round(coord.x  * cameraPrecision) / cameraPrecision;
-		coord.y = Mathf.Round(coord.y  * cameraPrecision) / cameraPrecision;
-		return coord;
+		follow = focusPoint;
+		focusPoint.position = new Vector3 (x, y, focusPoint.position.z);
+	}
+
+	public void FollowTo(Transform c)
+	{
+		follow = c;
+	}
+
+	private Vector3 RoundCoordinate(Vector3 o)
+	{
+		int p = 100;
+		Vector3 r = new Vector3 (o.x, o.y, o.z);
+		r.x = Mathf.Round (r.x * p) / p;
+		r.y = Mathf.Round (r.y* p) / p;
+		return r;
 	}
 }
