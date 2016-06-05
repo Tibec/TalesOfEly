@@ -28,43 +28,43 @@
 			<content>
 				<cinematic id='2' />
 				<dialog>
-	    		    <part char='0'>Quelques minutes plus tard, il remarque tout à coup qu'une de ses chèvres et en train de s'enfuir.</part>
+	    		    <part char='0'>Quelques minutes plus tard, il remarque tout à coup qu'une de ses chèvres est en train de s'enfuir.</part>
 					<part char='1'>Mais qu'est-ce que !? </part>
-					<part char='0'>Il s'élance, passe à coté d'un buisson de ronces et s’égratigne la jambe</part>
-					<part char='1'>Aie !</part>
-					<part char='0'>Il continue tout de même sur sa lancée, et fini par rattraper sa chèvre.</part>
+					<part char='0'>Il s'élance, passe à côté d'un buisson de ronces et s’égratigne la jambe</part>
+					<part char='1'>Aïe !</part>
+					<part char='0'>Il continue tout de même sur sa lancée, et finit par rattraper sa chèvre.</part>
 					<part char='1'>Ah ! Je t'ai rattrapée. Allez, retourne avec les autres !</part>
-	        <part char='0'>Ely et la chèvre retourne progressivement vers le sommet de la colline.</part>
-         	<part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
-        	<part char='0'>Ely Ely jette un coup d’œil à sa cheville.</part>
-			    <part char='1'>Tiens ?!</part>  
-			    <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
-			    <part char='1'>J'ai pourtant pas rêver …</part>  
-			    <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
+	                <part char='0'>Ely et la chèvre retourne progressivement vers le sommet de la colline.</part>
+         	        <part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
+        	        <part char='0'>Ely jette un coup d’œil à sa cheville.</part>
+			        <part char='1'>Tiens ?!</part>  
+			        <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
+			        <part char='1'>J'ai pourtant pas rêvé …</part>  
+			        <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
 				</dialog>
 			</content>
 			<choices>
 				<c goto='4'>Il lui en parle pendant le dîner.</c>
-				<c goto='5'>ayant peur d’etre pris pour un fou, il garde cette expérience pour lui.</c>
+				<c goto='5'>ayant peur d’être pris pour un fou, il garde cette expérience pour lui.</c>
 			</choices>
 		</scene>
     <scene id='2' map="colline">
       <content>
         <cinematic id='2' />
         <dialog>
-          <part char='0'>La fraîcheur du soir le réveille en sursaut quelques heures plus tard. Et ce rend compte qu'il manque une chèvre</part>
+          <part char='0'>La fraîcheur du soir le réveille en sursaut quelques heures plus tard. Et se rend compte qu'il manque une chèvre</part>
           <part char='1'>Ah ça fait du bien... </part>
           <part char='1'>Oh mon dieu, il manque une chèvre!? </part>
           <part char='0'>Il se calme un moment et réfléchit...</part>
           <part char='1'>Puisque l'on fait le même parcours tous les jours, elle a du rentrer, toute seule.</part>
           <part char='0'>Il regroupe rapidement ces chèvres et rentre d’un rythme soutenu.</part>
           <part char='0'>Dans son état toujours un peu ensommeillé, Il passe à coté d'un buisson de ronces et s’égratigne la jambe</part>
-          <part char='1'>Aie !</part>
+          <part char='1'>Aïe !</part>
           <part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
           <part char='0'>Ely jette un coup d’œil à sa cheville.</part>
           <part char='1'>Tiens ?!</part>
           <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
-          <part char='1'>J'ai pourtant pas rêver …</part>
+          <part char='1'>J'ai pourtant pas rêvé …</part>
           <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
         </dialog>
       </content>
@@ -73,52 +73,7 @@
         <c goto='5'>ayant peur d’etre pris pour un fou, il garde cette expérience pour lui.</c>
       </choices>
     </scene>
-    <scene id='3' map="colline">
-			<content>
-				<cinematic id='2' />
-				<dialog>
-	    		    <part char='0'>Quelques minutes plus tard, il remarque tout à coup qu'une de ses chèvres et en train de s'enfuir.</part>
-					<part char='1'>Mais qu'est-ce que !? </part>
-					<part char='0'>Il s'élance, passe à coté d'un buisson de ronces et s’égratigne la jambe</part>
-					<part char='1'>Aie !</part>
-					<part char='0'>Il continue tout de même sur sa lancée, et fini par rattraper sa chèvre.</part>
-					<part char='1'>Ah ! Je t'ai rattrapée. Allez, retourne avec les autres !</part>
-	        <part char='0'>Ely et la chèvre retourne progressivement vers le sommet de la colline.</part>
-         	<part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
-        	<part char='0'>Ely jette un coup d’œil à sa cheville.</part>
-			    <part char='1'>Tiens ?!</part>  
-			    <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
-			    <part char='1'>J'ai pourtant pas rêver …</part>  
-			    <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
-				</dialog>
-			</content>
-			<choices>
-				<c goto='4'>Il lui en parle pendant le dîner.</c>
-				<c goto='5'>ayant peur d’etre pris pour un fou, il garde cette expérience pour lui.</c>
-			</choices>
-		</scene>
-    
-    	<scene id='4' map="colline">
-			<content>
-				<cinematic id='1'/>     
-				<dialog>
-					<part char='2'>... (abasourdie)</part>
-					<part char='0'>Elle se sent subitement mal à l’aise, et élude la question. Ely n’insiste pas aux vues de son comportement. Cette question le travaille toute la nuit.</part>
-					<part char='0'>Le lendemain matin, sur le chemin du retour, Ely fait une fixation sur le fameux buisson. En prenant une épine du chardon, il se pique le doigt, une goutte de sang perle et soudain la blessure se referme.</part>
-     			<part char='1'>Oh mon Dieu</part>
-					<part char='0'> Terrorisé, abasourdi, il recommence dans le but de confirmer l’effet. Après quelques secondes d’inaction/panique il retourne sous son arbre avant de ramener ses chèvres chez lui.</part>
-			    <part char='0'>Sur le chemin du retour le temps s’assombrit, le vent se lève, un frisson général traverse le troupeau qui s’affole et se disperse.</part>
-			    <part char='1'>Eh! Où est ce que vous allez?</part>
-			    <part char='0'>Et Les chèvres de notre jeune fermier partent en direction de la forêt interdite.</part>
-        
-      			</dialog>
-			</content>
-			<choices>
-				<c goto='6'> Ely choisit de pénétrer dans la forêt interdite pour retrouver ses chèvres</c>
-				<c goto='7'>Pris de peur, Ely ne prend pas de risque et décide de ramener ses chèvres restantes chez lui.</c>
-			</choices>
-		</scene>
-    
+
     <scene id='5' map="colline">
       <content>
         <cinematic id='1'/>
@@ -136,11 +91,33 @@
         <c goto='7'>Pris de peur, Ely ne prend pas de risque et décide de ramener ses chèvres restantes chez lui.</c>
       </choices>
     </scene>
+    
+    	<scene id='4' map="colline">
+			<content>
+				<cinematic id='1'/>     
+				<dialog>
+					<part char='2'>... (abasourdie)</part>
+					<part char='0'>Elle se sent subitement mal à l’aise, et élude la question. Ely n’insiste pas aux vues de son comportement. Cette question le travaille toute la nuit.</part>
+					<part char='0'>Le lendemain matin, sur le chemin du retour, Ely fait une fixation sur le fameux buisson. En prenant une épine du chardon, il se pique le doigt, une goutte de sang perle et soudain la blessure se referme.</part>
+     			<part char='1'>Oh mon Dieu</part>
+					<part char='0'> Terrorisé, abasourdi, il recommence dans le but de confirmer l’effet. Après quelques secondes d’inaction/panique il retourne sous son arbre avant de ramener ses chèvres chez lui.</part>
+			    <part char='0'>Sur le chemin du retour le temps s’assombrit, le vent se lève, un frisson général traverse le troupeau qui s’affole et se disperse.</part>
+			    <part char='1'>Eh! Où est ce que vous allez?</part>
+			    <part char='0'>Et Les chèvres de notre jeune fermier partent en direction de la forêt interdite.</part>
+        
+      			</dialog>
+			</content>
+			<choices>
+				<c goto='6'>Ely choisit de pénétrer dans la forêt interdite pour retrouver ses chèvres</c>
+				<c goto='7'>Pris de peur, Ely ne prend pas de risque et décide de ramener ses chèvres restantes chez lui.</c>
+			</choices>
+		</scene>
+    
    		<scene id='6' map="village">
 			<content>
 				<cinematic id='2' />
 				<dialog>
-					<part char='0'> S’enfonçant dans la forêt, il n’en retrouvent aucune et remarque que la forêt est particulièrement silencieuse. Il se pose progressivement des questions sur cette forêt:</part>
+					<part char='0'>S’enfonçant dans la forêt, il n’en retrouve aucune et remarque que la forêt est particulièrement silencieuse. Il se pose progressivement des questions sur cette forêt:</part>
 					<part char='1'>(voix tremblante)Pourquoi est-elle interdite?</part>
 					<part char='1'>(voix tremblante)Que dit la légende, déjà?</part>
 					<part char='0'>(Grand père du village)Il y a très, très longtemps, la forêt d'Yggdrasil était occupée par des créatures fantastiques, vampires, phénix, goules.</part>
@@ -155,30 +132,30 @@
 					<part char='1'>AAAAAAHHH... mais qu'est ce que...?</part>
 					<part char='0'>Il se retrouve en plein milieu d’une clairière. Il remarque que le ciel est violet, la lune bleue.</part>
 					<part char='0'>Subitement, une flèche effleure son oreille. alors qu’il lève les mains en signe de paix, il se prend une flèche dans le bras gauche.</part>
-					<part char='3'>Veuillez décliner votre identité!</part>
+					<part char='3'>Qui êtes-vous ?!</part>
 					<part char='1'>Ely Voxen, je viens en...</part>
 					<part char='3'>Silence!</part>
-					<part char='0'>L'elfe se rapproche de lui, et se fige!</part>
-					<part char='3'>(pense)Il n'est pas bléssé?</part>
+					<part char='0'>L'elfe se rapproche de lui et se fige.</part>
+					<part char='3'>(pense)Il n'est pas blessé?</part>
 					<part char='3'>Vous autres, amenez-le!</part>
-					<part char='1'>Non, s'il vous plait, lachez moi! Je ne vous veux aucun mal! Je rentrerai de l'autre côté s'il le faut...</part>
+					<part char='1'>Non, s'il vous plaît, lachez moi! Je ne vous veux aucun mal! Je retourne de l'autre côté si il le faut...</part>
 					<part char='0'>Ely se fait ainsi capturer par les elfes.</part>
 					<part char='6'>Qui vous envoie? D'où venez vous? Qu'attendez-vous de nous?...</part>
-					<part char='0'>Tous les elfes qui posent des questions et parlent en même temps...</part>
+					<part char='0'>Tous les elfes posent des questions et parlent en même temps, Ely est désorienté et ne sait plus à qui s'adresser...</part>
 					<part char='0'>Soudain, une voix altérée par le temps surgit:</part>
 					<part char='4'>Silence!</part>
 					<part char='4'>Que se passe t-il ici?</part>
-					<part char='4'>Qui es tu jeune homme?</part>
-					<part char='1'>Ely Voxen, pauvre fermier, qui ne vous souhaite aucun mal. J'aimerai juste rentrer chez moi...</part>
+					<part char='4'>Qui es-tu jeune homme?</part>
+					<part char='1'>Ely Voxen, simple fermier, je ne vous veux aucun mal! J'aimerais juste rentrer chez moi...</part>
 					<part char='4'>Et comment as tu fait pour arriver ici?</part>
 					<part char='1'>Eh bien... Le portail. C'est évident. D'ailleurs, c'est très dangereux de le laisser à la portée de tous.</part>
 					<part char='0'>L'Ancien se rend donc compte que notre jeune aventurier est ignorant de ce monde. Il en déduit qu'il ne représente pas une menace.</part>
 					<part char='0'>De plus le jeune Ely, a pu pénétrer ce monde. Ce jeune a donc nécessairement une essence magique.</part>
 					<part char='4'>Allons, libérer ce jeune homme. Il n'est pas une menace pour nous... Bien au contraire (le sourire aux lèvres, en détachant Ely)</part>
-					<part char='0'>Au contact de l’Ancien Ely ressent une présence très forte, quasi écrasante</part>
-					<part char='4'>Ce que tu ressens est mon essence magique. Etant le plus agé de ce village, il est normal que tu sois impressionné par mon énergie magique</part>
+					<part char='0'>Au contact de l’Ancien Ely ressent une présence très forte, écrasante.</part>
+					<part char='4'>Ce que tu ressens est mon essence magique. Etant le plus âgé de ce village, il est normal que tu sois impressionné par mon énergie magique</part>
 					<part char='4'>Tu as pu détecter mon essence sans avoir vécu dans ce monde. Pour quelqu'un qui vit avec les humains, tes capacités sont impressionantes.</part>
-					<part char='4'>Elles nous seraient d'ailleurs bien utiles. Acceptes-tu de rester parmi nous un peu plus longtemps, jeune homme?</part>
+					<part char='4'>Elles nous seraient d'ailleurs bien utiles. Acceptes-tu de rester parmis nous un peu plus longtemps, jeune homme?</part>
 				</dialog>
 			</content>
 			<choices>
@@ -206,7 +183,7 @@
           <part char='1'>Bonne nuit.</part>
           <part char='0'>Cette discussion pique momentanément la curiosité d'Ely.</part>
           <part char='0'>Il passe toute cette nuit à y réfléchir...</part>
-          <part char='0'>A terme, Ely conclue qu'il doit bien avoir une raison pour sa mère soit totalement contre cette idée.</part>
+          <part char='0'>A terme, Ely conclut qu'il doit bien avoir une raison pour sa mère soit totalement contre cette idée.</part>
           <part char='1'>Elle veut surement me protéger. Comme toutes les mères. Je ferai mieux de ne pas insister</part>
           <part char='0'>Le lendemain matin, Ely retrouve la chèvre près de leur maison. Il abandonne définitivement cette idée de pénétrer dans la forêt</part>
         </dialog>
@@ -233,5 +210,49 @@
 				</dialog>
 			</content>
 		</scene>
+
+		<scene id='8' fin="true" map="colline">
+			<content>
+				<cinematic id='2' />
+				<dialog>
+					<part char='0'>Ely et l'Ancien se rendent à l’Autel des Chutes Sacrées,  et ce dernier explique à Ely qu'un être maléfique s'attaque au village depuis quelques temps.</part>
+					<part char='4'>Nous avons besoin de ton aide, Ely. J'ai ressenti ta puissance à la seconde où je t'ai vu. Ton aide nous serait précieuse. </part>
+					<part char='1'>(fier) J'en serais enchanté ! </part>
+					<part chart='0'>Ely se concentre et grâce aux conseils de l'Ancien, perçoit une forte énergie maléfique venant du Nord-Est. L’Ancien s’inquiète car dans cette direction se trouve le Temple sacré de Serena, leur déesse. Il prévient tous les habitants qui se dirigent vers le temple.</part>
+					<part char='0'>Ely et quelques elfes courageux se dirigent vers le temple. Ils découvrent sur place le Roi des Ombres, une créature mi-démon mi-dragon, redoutée de tous les êtres. </part>
+					<part char='4'>Ely, peux tu nous aider à vaincre ce démon ? </part>
+					</dialog>
+			</content>
+			<choices>
+				<c goto='10'>Paniqué, Ely n'arrive pas à se lancer dans la bataille. Il décide de rester en retrait</c>
+				<c goto='11'>Fier de l'attention et de la confiance que lui accordent les elfes, Ely décide de les aider.</c>
+			</choices>
+		</scene>
+
+        <scene id='10' fin="true" map="colline">
+			<content>
+				<cinematic id='2' />
+				<dialog>
+					<part char='1'>Non je ne peux pas... Je ne suis pas de taille à affronter un tel démon !</part>
+					<part char='0'>Ely court se mettre en retrait, laissant les elfes affronter le démon seul.</part>
+					<part char='0'>L'avantage du démon est incontestable. Les elfes se font balayer, laissant Ely et l'Ancien à la merci du démon.</part>
+					<part char='0'>Terrorisés en sans défense, le démon les tue sans pitié.</part>
+				</dialog>
+			</content>
+		</scene>
+
+		 <scene id='11' fin="true" map="colline">
+			<content>
+				<cinematic id='2' />
+				<dialog>
+					<part char='1'>Allons-y !!!</part>
+					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
+					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
+					<part char='0'>Après une longue soirée de célébration de la mort du tyran, et une bonne nuit de récupération, Ely décide de rentrer dans le monde des humains. Sa mère, d'abord énervée de ses péripéties, finient par lui epxliquer d'où lui viennent ses mystérieux pouvoirs.</part>
+					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
+				</dialog>
+			</content>
+		</scene>
+
 	</scenes>
 </story>
