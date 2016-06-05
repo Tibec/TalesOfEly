@@ -44,9 +44,23 @@ public class Cinematics
 	public void Play(String map, int id)
 	{
 		Type item = this.GetType ();
-		MethodInfo function = item.GetMethod("play_"+map+"_"+id);
+		MethodInfo function = item.GetMethod ("play_" + map + "_" + id, BindingFlags.NonPublic | BindingFlags.Instance);
+		if (function == null)
+			Debug.Log ("ptr null ");
 		function.Invoke (this, null);
 	}
+
+	private Manipulable.Character GetCharacterByName(string name)
+	{
+		foreach (GameObject g in chars) {
+			if (g.name == name) {
+				return g.GetComponent<Manipulable.Character> ();
+			}
+		}
+
+		throw new Exception("Le personnage n'existe pas");
+	}
+
 	private void play_village_1()
 	{
 		/*
@@ -62,6 +76,11 @@ public class Cinematics
 
 	private void play_colline_1()
 	{
-		
+		Debug.Log ("Début cinematique");
+		Manipulable.Character c = GetCharacterByName ("ElyM");
+		c.TeleportTo (15, 5);
+		c.RunTo (15, 15, Orientation.UP);
+		c.RunTo (35, 15, Orientation.RIGTH);
+
 	}
 }

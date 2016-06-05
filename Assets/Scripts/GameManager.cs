@@ -20,21 +20,15 @@ public class GameManager : MonoBehaviour {
 
 	private Cinematics cinematicMgr;
 
-	//
-	public void Awake()
-	{
-		
-	}
-
 	// Use this for initialization
-	public void Start () {
+	public void Awake () {
 		Reset ();
 		LoadCharacters ();
 	}
 
 	// Update is called once per frame
 	public void Update () {
-		if (scene == null) {
+		if (scene == null || !CharInit()) {
 			return;
 		}
 
@@ -71,6 +65,7 @@ public class GameManager : MonoBehaviour {
 				} else { // (c.get_type () == content_type.CINEMATIC) 
 					cinematicMgr = new Cinematics();
 					cinematicMgr.Init(cam, chars, null );
+					cinematicMgr.Play (scene.Map, 1);
 				}
 			}
 				
@@ -126,15 +121,33 @@ public class GameManager : MonoBehaviour {
 
 	void LoadCharacters() {
 		chars = new List<GameObject> ();
+		List<GameObject> res = new List<GameObject> ();
 
-		chars.Add (Resources.Load ("ElyM") as GameObject);
-		chars.Add (Resources.Load ("ElyF") as GameObject);
-		chars.Add (Resources.Load ("Chevre") as GameObject);
-		chars.Add (Resources.Load ("Mother") as GameObject);
+		res.Add (Resources.Load ("ElyM") as GameObject);
+		res.Add (Resources.Load ("ElyF") as GameObject);
+		res.Add (Resources.Load ("Chevre") as GameObject);
+		res.Add (Resources.Load ("Mother") as GameObject);
 
-		foreach (GameObject c in chars){
-			Instantiate (c);
-			c.GetComponents<Character> ();
+		foreach (GameObject c in res){
+			GameObject g = Instantiate (c);
+			g.name = g.name.Replace("(Clone)", "");
+			chars.Add (g);
 		}
+	}
+
+	private bool CharInit()
+	{
+		if(chars == null)
+			return false;
+		foreach (GameObject g in chars)
+		{
+			Manipulable.Character c = g.GetComponent<Manipulable.Character> ();
+
+			if (!c.Initialized)
+				return false;
+			Debug.Log (" perso init");
+		
+		}
+		return true;
 	}
 }
