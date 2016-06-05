@@ -34,10 +34,9 @@ public class Cinematics
 
 	public void Update()
 	{
-		// Run subroutines
-		//foreach (Character c in chars) {
-			//c.Update ();
-		//}
+		// Géré mouvement de la camera
+
+		// Utiliser Vector3.Lerp (+ d'info dans le code de smoothcamera.cs)
 
 	}
 
@@ -48,6 +47,20 @@ public class Cinematics
 		if (function == null)
 			Debug.Log ("ptr null ");
 		function.Invoke (this, null);
+	}
+
+	private void TeleportCamera(int x, int y)
+	{
+
+	}
+
+	private void MoveCamera(int x, int y, float speed)
+	{
+
+	}
+	private void CameraFollow(Manipulable.Character c, float speed)
+	{
+
 	}
 
 	private Manipulable.Character GetCharacterByName(string name)
