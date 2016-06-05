@@ -66,16 +66,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioMgr.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Cinematics.cs" />
+    <Compile Include="Assets\Scripts\Debug\InjectValue.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\GameScene.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\SmoothCamera.cs" />
     <Compile Include="Assets\Scripts\StoryMgr\Characters.cs" />
     <Compile Include="Assets\Scripts\StoryMgr\Scenes.cs" />
     <Compile Include="Assets\Scripts\StoryMgr\StoryManager.cs" />
+    <Compile Include="Assets\Scripts\UI\ChoiceManager.cs" />
     <Compile Include="Assets\Scripts\UI\CircularRotation.cs" />
+    <Compile Include="Assets\Scripts\UI\DialogManager.cs" />
     <Compile Include="Assets\Scripts\UI\GestionCreditUI.cs" />
     <Compile Include="Assets\Scripts\UI\UiController.cs" />
     <Compile Include="Assets\Scripts\old\Player.cs" />
@@ -161,9 +164,7 @@
     <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\characters.xml" />
-    <None Include="Assets\Resources\dialogs.xml" />
-    <None Include="Assets\Resources\scenarios.xml" />
+    <None Include="Assets\Character\Resources\put characters prefabs here.txt" />
     <None Include="Assets\Resources\story.xml" />
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />

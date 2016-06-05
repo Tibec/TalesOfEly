@@ -6,8 +6,9 @@ using Entities;
 
 public class GameManager : MonoBehaviour {
 
-	public Camera cam;
-	public GameObject dialogUI;
+	public tk2dCamera cam; //Temporary Fix
+    //public Camera cam; 
+    public GameObject dialogUI;
 	public GameObject choiceUI;
 	public DialogManager dialogUiScript;
 	public ChoiceManager choiceUiScript;
@@ -57,7 +58,7 @@ public class GameManager : MonoBehaviour {
 					choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
 					choiceUI.SetActive (true);
 				}
-			} else { // Tratiement de l'étape
+			} else { // Traitement de l'étape
 				Content c = scene.Content [step];
 				if (c.get_type () == content_type.DIALOG) {
 					// Load Dialog
