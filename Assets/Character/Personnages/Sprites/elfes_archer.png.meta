@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: 5d72aad50a62c274a9c88089e2fe8120
+timeCreated: 1465157490
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: elfes_0
+    21300002: elfes_1
+    21300004: elfes_2
+    21300006: elfes_3
+    21300008: elfes_4
+    21300010: elfes_5
+    21300012: elfes_6
+    21300014: elfes_7
+    21300016: elfes_8
+    21300018: elfes_9
+    21300020: elfes_10
+    21300022: elfes_11
+    21300024: elfes_12
+    21300026: elfes_13
+    21300028: elfes_14
+    21300030: elfes_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 16
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: elfes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 28.75}
+        - {x: -11, y: 28.75}
+        - {x: -14, y: 27.75}
+        - {x: -22, y: 17.75}
+        - {x: -22, y: -4.25}
+        - {x: -16, y: -30.25}
+        - {x: 8, y: -30.25}
+        - {x: 11, y: -26.25}
+        - {x: 11, y: 8.75}
+        - {x: 7, y: 18.75}
+    - name: elfes_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 195.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 31.75}
+        - {x: -12, y: 31.75}
+        - {x: -20, y: 16.75}
+        - {x: -20, y: 4.75}
+        - {x: -11, y: -29.25}
+        - {x: -10, y: -30.25}
+        - {x: 6, y: -30.25}
+        - {x: 11, y: -11.25}
+        - {x: 11, y: 16.75}
+        - {x: 10, y: 19.75}
+    - name: elfes_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 195.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32.75}
+        - {x: -18, y: 16.75}
+        - {x: -18, y: 4.75}
+        - {x: -9, y: -29.25}
+        - {x: -6, y: -30.25}
+        - {x: 14, y: -30.25}
+        - {x: 14, y: 20.75}
+        - {x: 10, y: 32.75}
+    - name: elfes_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 195.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 33.75}
+        - {x: -16, y: 23.75}
+        - {x: -16, y: -4.25}
+        - {x: -6, y: -30.25}
+        - {x: 14, y: -30.25}
+        - {x: 17, y: -25.25}
+        - {x: 17, y: 16.75}
+        - {x: 1, y: 33.75}
+    - name: elfes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 27.75}
+        - {x: -20, y: 27.75}
+        - {x: -31, y: 12.75}
+        - {x: -31, y: -6.25}
+        - {x: -17, y: -26.25}
+        - {x: 8, y: -26.25}
+        - {x: 12, y: -16.25}
+        - {x: 12, y: 24.75}
+        - {x: 11, y: 25.75}
+      - - {x: 24, y: 7.75}
+        - {x: 24, y: 6.75}
+        - {x: 28, y: 2.75}
+        - {x: 31, y: 2.75}
+        - {x: 31, y: 10.75}
+        - {x: 28, y: 10.75}
+    - name: elfes_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 130.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 30.75}
+        - {x: -20, y: 30.75}
+        - {x: -31, y: 10.75}
+        - {x: -31, y: -2.25}
+        - {x: -13, y: -26.25}
+        - {x: 10, y: -26.25}
+        - {x: 10, y: 22.75}
+      - - {x: 27, y: 8.75}
+        - {x: 27, y: 7.75}
+        - {x: 30, y: 4.75}
+        - {x: 31, y: 4.75}
+        - {x: 31, y: 10.75}
+        - {x: 29, y: 10.75}
+    - name: elfes_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 130.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 29.75}
+        - {x: -3, y: 32.75}
+        - {x: -12, y: 32.75}
+        - {x: -31, y: 11.75}
+        - {x: -31, y: 2.75}
+        - {x: -11, y: -26.25}
+        - {x: 12, y: -26.25}
+        - {x: 14, y: -21.25}
+        - {x: 14, y: 18.75}
+        - {x: 13, y: 19.75}
+    - name: elfes_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 130.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 30.75}
+        - {x: -30, y: 15.75}
+        - {x: -30, y: 1.75}
+        - {x: -13, y: -24.25}
+        - {x: -8, y: -26.25}
+        - {x: 16, y: -26.25}
+        - {x: 19, y: -18.25}
+        - {x: 19, y: 19.75}
+        - {x: 4, y: 30.75}
+    - name: elfes_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 17.75}
+        - {x: -1, y: 26.75}
+        - {x: -14, y: 26.75}
+        - {x: -22, y: 18.75}
+        - {x: -22, y: -0.25}
+        - {x: -18, y: -20.25}
+        - {x: -11, y: -27.25}
+        - {x: -8, y: -27.25}
+        - {x: -1, y: -25.25}
+        - {x: 3, y: -23.25}
+        - {x: 8, y: 3.75}
+    - name: elfes_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 65.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 26.75}
+        - {x: -11, y: 26.75}
+        - {x: -20, y: 22.75}
+        - {x: -20, y: -13.25}
+        - {x: -15, y: -25.25}
+        - {x: 6, y: -25.25}
+        - {x: 7, y: -24.25}
+        - {x: 10, y: 6.75}
+        - {x: 10, y: 16.75}
+        - {x: 3, y: 24.75}
+    - name: elfes_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 65.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 26.75}
+        - {x: -10, y: 26.75}
+        - {x: -18, y: 18.75}
+        - {x: -18, y: 3.75}
+        - {x: -14, y: -20.25}
+        - {x: -8, y: -25.25}
+        - {x: 3, y: -25.25}
+        - {x: 8, y: -24.25}
+        - {x: 12, y: 7.75}
+        - {x: 12, y: 16.75}
+        - {x: 5, y: 25.75}
+    - name: elfes_11
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 65.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 26.75}
+        - {x: -16, y: -25.25}
+        - {x: 5, y: -25.25}
+        - {x: 10, y: -24.25}
+        - {x: 14, y: -4.25}
+        - {x: 14, y: 19.75}
+        - {x: 5, y: 26.75}
+    - name: elfes_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 30.75}
+        - {x: -24, y: 24.75}
+        - {x: -24, y: -16.25}
+        - {x: -21, y: -23.25}
+        - {x: 12, y: -23.25}
+        - {x: 23, y: -0.25}
+        - {x: 23, y: 18.75}
+        - {x: 12, y: 30.75}
+    - name: elfes_13
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 33.75}
+        - {x: -18, y: 27.75}
+        - {x: -18, y: -21.25}
+        - {x: -17, y: -23.25}
+        - {x: 2, y: -23.25}
+        - {x: 9, y: -21.25}
+        - {x: 30, y: 9.75}
+        - {x: 30, y: 10.75}
+        - {x: 12, y: 33.75}
+    - name: elfes_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 33.75}
+        - {x: -3, y: 33.75}
+        - {x: -13, y: 30.75}
+        - {x: -18, y: 18.75}
+        - {x: -18, y: -9.25}
+        - {x: -17, y: -17.25}
+        - {x: -14, y: -23.25}
+        - {x: 8, y: -23.25}
+        - {x: 31, y: -4.25}
+        - {x: 31, y: 21.75}
+        - {x: 21, y: 30.75}
+    - name: elfes_15
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0.75
+        width: 62
+        height: 65.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 12.75}
+        - {x: 10, y: 33.75}
+        - {x: -5, y: 33.75}
+        - {x: -19, y: 18.75}
+        - {x: -19, y: -5.25}
+        - {x: -15, y: -16.25}
+        - {x: -12, y: -23.25}
+        - {x: -2, y: -23.25}
+        - {x: 8, y: -21.25}
+        - {x: 12, y: -20.25}
+        - {x: 30, y: 4.75}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,13 +1,45 @@
 fileFormatVersion: 2
-guid: 5d72aad50a62c274a9c88089e2fe8120
-timeCreated: 1465146148
+guid: 5fb8b8d4be8f45644b9a58dac2785145
+timeCreated: 1465157749
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: elfes_2_0
+    21300002: elfes_2_1
+    21300004: elfes_2_2
+    21300006: elfes_2_3
+    21300008: elfes_2_4
+    21300010: elfes_2_5
+    21300012: elfes_2_6
+    21300014: elfes_2_7
+    21300016: elfes_2_8
+    21300018: elfes_2_9
+    21300020: elfes_2_10
+    21300022: elfes_2_11
+    21300024: elfes_2_12
+    21300026: elfes_2_13
+    21300028: elfes_2_14
+    21300030: elfes_2_15
+    21300032: elfes_0
+    21300034: elfes_1
+    21300036: elfes_2
+    21300038: elfes_3
+    21300040: elfes_4
+    21300042: elfes_5
+    21300044: elfes_6
+    21300046: elfes_7
+    21300048: elfes_8
+    21300050: elfes_9
+    21300052: elfes_10
+    21300054: elfes_11
+    21300056: elfes_12
+    21300058: elfes_13
+    21300060: elfes_14
+    21300062: elfes_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -19,18 +51,18 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 0
   cubemapConvolution: 0
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +70,326 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
-  textureType: 8
+  textureType: 5
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: elfes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 28}
+        - {x: -22, y: 15}
+        - {x: -22, y: -19}
+        - {x: -20, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 18}
+        - {x: 5, y: 28}
+    - name: elfes_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 192
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 28}
+        - {x: -18, y: 23}
+        - {x: -18, y: -19}
+        - {x: -15, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 16}
+        - {x: 11, y: 28}
+    - name: elfes_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 192
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -14, y: 20}
+        - {x: -14, y: -18}
+        - {x: -5, y: -25}
+        - {x: 20, y: -25}
+        - {x: 20, y: 28}
+    - name: elfes_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 192
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 27}
+        - {x: -10, y: 13}
+        - {x: -10, y: -21}
+        - {x: -9, y: -23}
+        - {x: 6, y: -26}
+        - {x: 20, y: -26}
+        - {x: 23, y: -25}
+        - {x: 23, y: 27}
+    - name: elfes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 28}
+        - {x: -17, y: 20}
+        - {x: -17, y: -23}
+        - {x: -15, y: -24}
+        - {x: -12, y: -25}
+        - {x: 7, y: -25}
+        - {x: 8, y: -20}
+        - {x: 8, y: 26}
+        - {x: 4, y: 28}
+    - name: elfes_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 128
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -10}
+        - {x: -16, y: -20}
+        - {x: -10, y: -25}
+        - {x: -6, y: -24}
+        - {x: -4, y: -25}
+        - {x: 8, y: -25}
+        - {x: 13, y: -23}
+        - {x: 13, y: 11}
+        - {x: 11, y: 23}
+        - {x: 6, y: 27}
+        - {x: -5, y: 27}
+        - {x: -14, y: 22}
+    - name: elfes_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 28}
+        - {x: -9, y: 23}
+        - {x: -10, y: 22}
+        - {x: -10, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -21}
+        - {x: 16, y: 26}
+        - {x: 14, y: 28}
+    - name: elfes_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 128
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 28}
+        - {x: -5, y: 21}
+        - {x: -5, y: -11}
+        - {x: -2, y: -24}
+        - {x: 16, y: -24}
+        - {x: 22, y: -19}
+        - {x: 22, y: 14}
+        - {x: 19, y: 28}
+    - name: elfes_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 27}
+        - {x: -22, y: 20}
+        - {x: -22, y: -25}
+        - {x: 12, y: -25}
+        - {x: 12, y: 22}
+        - {x: 8, y: 27}
+    - name: elfes_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 64
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 16}
+        - {x: 8, y: 27}
+        - {x: -7, y: 27}
+        - {x: -18, y: 16}
+        - {x: -18, y: -22}
+        - {x: -14, y: -25}
+        - {x: 11, y: -25}
+        - {x: 16, y: -12}
+        - {x: 16, y: 4}
+    - name: elfes_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 64
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 27}
+        - {x: -14, y: 25}
+        - {x: -14, y: -18}
+        - {x: -11, y: -23}
+        - {x: -7, y: -26}
+        - {x: 18, y: -26}
+        - {x: 20, y: -25}
+        - {x: 20, y: 18}
+        - {x: 18, y: 27}
+    - name: elfes_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 64
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 19}
+        - {x: 15, y: 27}
+        - {x: -6, y: 27}
+        - {x: -9, y: 23}
+        - {x: -9, y: -13}
+        - {x: -7, y: -26}
+        - {x: 19, y: -26}
+        - {x: 20, y: -24}
+        - {x: 24, y: -8}
+    - name: elfes_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 28}
+        - {x: -16, y: 23}
+        - {x: -18, y: 17}
+        - {x: -18, y: -10}
+        - {x: -15, y: -21}
+        - {x: -13, y: -25}
+        - {x: 2, y: -25}
+        - {x: 7, y: -24}
+        - {x: 7, y: 24}
+        - {x: -1, y: 28}
+    - name: elfes_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 28}
+        - {x: -9, y: 28}
+        - {x: -14, y: 24}
+        - {x: -15, y: 18}
+        - {x: -15, y: -24}
+        - {x: -13, y: -25}
+        - {x: 8, y: -25}
+        - {x: 14, y: -22}
+        - {x: 14, y: 7}
+        - {x: 12, y: 24}
+    - name: elfes_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -10, y: 21}
+        - {x: -10, y: -17}
+        - {x: -8, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+        - {x: 12, y: 28}
+    - name: elfes_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -8, y: 25}
+        - {x: -8, y: -24}
+        - {x: 16, y: -24}
+        - {x: 19, y: -10}
+        - {x: 19, y: 23}
+        - {x: 11, y: 28}
     outline: []
   spritePackingTag: 
   userData: 
