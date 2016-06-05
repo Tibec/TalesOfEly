@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
 <story>
 	<characters>
-    <char id='0' face="x.png" >Narrateur</char>
-	<char id='1' face="x.png" >Ely</char>
-	<char id='2' face="y.png" >Mère d'Ely</char>
-    <char id='3' face="z.png" >Elfe</char>
-    <char id='6' face="z.png" >Tous les elfes</char>
-	<char id='4' face="z.png" >Le grand-père</char>
-    <char id='5' face="z.png" >Chèvre</char>
+    <char id='0' face="narrateur.psd" >Narrateur</char>
+	<char id='1' face="" >Ely</char>
+	<char id='2' face="ElyMother.psd" >Mère d'Ely</char>
+    <char id='3' face="Elfe.png" >Elfe</char>
+    <char id='6' face="z.psd" >Tous les elfes</char>
+	<char id='4' face="vieux elfe.psd" >Le grand-père</char>
+    <char id='5' face="chevre.png" >Chèvre</char>
 	</characters>
 	<scenes>
 		<scene id='0' map="colline">
@@ -218,7 +217,7 @@
 					<part char='0'>Ely et l'Ancien se rendent à l’Autel des Chutes Sacrées,  et ce dernier explique à Ely qu'un être maléfique s'attaque au village depuis quelques temps.</part>
 					<part char='4'>Nous avons besoin de ton aide, Ely. J'ai ressenti ta puissance à la seconde où je t'ai vu. Ton aide nous serait précieuse. </part>
 					<part char='1'>(fier) J'en serais enchanté ! </part>
-					<part chart='0'>Ely se concentre et grâce aux conseils de l'Ancien, perçoit une forte énergie maléfique venant du Nord-Est. L’Ancien s’inquiète car dans cette direction se trouve le Temple sacré de Serena, leur déesse. Il prévient tous les habitants qui se dirigent vers le temple.</part>
+					<part char='0'>Ely se concentre et grâce aux conseils de l'Ancien, perçoit une forte énergie maléfique venant du Nord-Est. L’Ancien s’inquiète car dans cette direction se trouve le Temple sacré de Serena, leur déesse. Il prévient tous les habitants qui se dirigent vers le temple.</part>
 					<part char='0'>Ely et quelques elfes courageux se dirigent vers le temple. Ils découvrent sur place le Roi des Ombres, une créature mi-démon mi-dragon, redoutée de tous les êtres. </part>
 					<part char='4'>Ely, peux tu nous aider à vaincre ce démon ? </part>
 					</dialog>
