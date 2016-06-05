@@ -66,6 +66,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="projet_si28.CSharp.Plugins.csproj">
+      <Project>{9C2799C4-7455-0045-D772-83326941EE28}</Project>
+      <Name>projet_si28.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\AudioMgr.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Cinematics.cs" />
@@ -165,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Character\Resources\put characters prefabs here.txt" />
+    <None Include="Assets\Plugins\MusicManager\TestScene\Resources\Music_Licence.txt" />
     <None Include="Assets\Resources\story.xml" />
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />

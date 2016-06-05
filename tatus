@@ -1,0 +1,179 @@
+[33mcommit 15adc0059471257e6dd7953e48700379ff6a8967[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Tue May 31 19:42:49 2016 +0200
+
+    Début moteur cinématique
+
+[33mcommit 881069517b5b3f72bc6c8e36fd38c52c1796e933[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 30 17:05:15 2016 +0200
+
+    Ajout de la seance
+
+[33mcommit 8778575892af6e6b367268fac76dc737be723d1b[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 30 15:27:50 2016 +0200
+
+    Finition du menu principal
+    Remplissage XML
+
+[33mcommit dd2ec57fc44116d50fdcf83ec04662bb6c1043e2[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 30 03:10:08 2016 +0200
+
+    Lecture de scenario finie !
+    Ajout d'un menu de debug :o
+
+[33mcommit f91b192089e5602cffadc14a6c348a15f7b02549[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 30 02:15:38 2016 +0200
+
+    Parcours lineaire fonctionnel !
+
+[33mcommit 6d8c8442e89aba088f94d6110c58b7cfaafc72de[m
+Merge: 1624ba0 700525d
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 30 00:08:14 2016 +0200
+
+    Merge branch 'Yoann' of https://bitbucket.org/Benjamin_R/projet_si28
+
+[33mcommit 1624ba0ee19791e087bb0a1afb9d8b9a85858554[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 23:57:11 2016 +0200
+
+    Chargement des dialogs
+
+[33mcommit 700525dc7d1ada2b8a8141a5fea0963df3447fe7[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 23:20:12 2016 +0200
+
+    Story completion
+
+[33mcommit 510e9658b7bd711a339be3606d0a4c215edceb67[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 23:19:18 2016 +0200
+
+    Game Title
+
+[33mcommit f1aec9ba39a835e31383d2d6c55c08e31a17b815[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 23:10:54 2016 +0200
+
+    Story 1
+
+[33mcommit c1e7905b555a3731d83284f035bebf6f54e34736[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 19:11:19 2016 +0200
+
+    Fix font
+
+[33mcommit e9b9bcf2314399b524c5623d4f02148df6f00348[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 19:03:34 2016 +0200
+
+    Character Sprites fix EliM
+
+[33mcommit 1c7682dd909b83506317c289317005863b5e8995[m
+Merge: 21aa6da 14603e3
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 18:51:15 2016 +0200
+
+    Merge branch 'master' of https://bitbucket.org/Benjamin_R/projet_si28
+
+[33mcommit 14603e359425345ad0d21c44f8b72b88c66bbdb2[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 18:45:08 2016 +0200
+
+    Character Sprites
+
+[33mcommit 21aa6da52b07f89a0140d9814e4bf469907fc186[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 18:44:49 2016 +0200
+
+    Avancement script
+
+[33mcommit 2716092d24ca7a95efe24acd57e19bac31977bf9[m
+Merge: 3b5fdbb d0fc392
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 16:28:57 2016 +0200
+
+    Pre merge
+
+[33mcommit 3b5fdbbc95bb4106e8e2770f400a55b5cb91364f[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 16:26:36 2016 +0200
+
+    premerge
+
+[33mcommit d0fc392137a85956e46e09ea399bc9a50d5e777e[m
+Merge: 7065dae 288cce8
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 16:21:52 2016 +0200
+
+    Merge branch 'master' of https://bitbucket.org/Benjamin_R/projet_si28
+
+[33mcommit 7065dae11e8679b8e0edb5fc59142a3ff915c122[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Sun May 29 16:18:38 2016 +0200
+
+    nettoyage + ajout gitignore
+
+[33mcommit 288cce870452f3ec7b89e52c72d7cc46cf6a113f[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 14:53:53 2016 +0200
+
+    Dynamic edit of textmesh storyteller
+
+[33mcommit 1fa2bfd57fbd111eb00cfbc70937c73ebf7e1857[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 29 04:13:14 2016 +0200
+
+    Add Text mesh UI fixed on camera
+
+[33mcommit 6330db1b2d3731bc2e549a827ce5073588e44ebb[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Thu May 26 13:56:19 2016 +0200
+
+    Ajout deux trois trucs
+
+[33mcommit bf2b08e5cab427cf302609e76cd66d3e5239a2f4[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Tue May 24 21:08:00 2016 +0200
+
+    Ajout de la rotation de la camera sur le menu
+
+[33mcommit 2e56f65d80bf0ef4e6dd60f3604cf86d7a6ea76c[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Tue May 24 19:48:48 2016 +0200
+
+    Ajout interface
+
+[33mcommit f193517c8588de5c499c4312ed505d25c62968dd[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Mon May 23 17:45:43 2016 +0200
+
+    Maj de Lundi
+
+[33mcommit 7a858933ba503bf59dd99d2fe863165791598d8e[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 15 18:55:16 2016 +0200
+
+    1st try render on scene: game mode bug. the user cant see the textbox while playing
+
+[33mcommit 1ac9ba35823ee04f539ca187c0fe67d1597e22e5[m
+Author: Yoann SOH <ysoh24@gmail.com>
+Date:   Sun May 15 16:55:54 2016 +0200
+
+    XML parser Script
+
+[33mcommit 235560f4d5602be6a6c7ab4fe807a2696fa14f07[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Fri May 6 20:09:34 2016 +0200
+
+    Ajout de plusieurs maps + fix tearing
+
+[33mcommit 1425cf70052dc0133a3c4334b5d333a5572e20f4[m
+Author: Benjamin <benjamin.roelandt@gmail.com>
+Date:   Wed May 4 16:04:42 2016 +0200
+
+    Initial commit
