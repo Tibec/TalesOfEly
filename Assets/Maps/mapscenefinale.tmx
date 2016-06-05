@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="45" height="50" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="bat" tilewidth="16" tileheight="16" tilecount="12040" columns="140">
-  <image source="../Downloads/tileset_pokemon_2.png" width="2240" height="1376"/>
+  <image source="../../../../Downloads/tileset_pokemon_2.png" width="2240" height="1376"/>
  </tileset>
  <tileset firstgid="12041" name="terrain" tilewidth="16" tileheight="16" tilecount="8704" columns="128">
-  <image source="../Downloads/tileset_pokemon.png" width="2048" height="1088"/>
+  <image source="../../../../Downloads/tileset_pokemon.png" width="2048" height="1088"/>
  </tileset>
  <layer name="Calque de Tile 1" width="45" height="50">
   <data encoding="base64">
