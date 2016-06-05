@@ -51,19 +51,37 @@ public class Cinematics
 
 	private void TeleportCamera(int x, int y)
 	{
+        SmoothCamera script = camera.GetComponent<SmoothCamera>();
+        Vector2 now = new Vector2(x, y);
+        camera.transform.position = now;
+        script.follow.position = now;
 
-	}
+    }
 
 	private void MoveCamera(int x, int y, float speed)
 	{
 
 	}
+
 	private void CameraFollow(Manipulable.Character c, float speed)
 	{
-
+       SmoothCamera script = camera.GetComponent<SmoothCamera>();
+        script.follow.position = GetGameObjectByCharacter(c).transform.position;
 	}
 
-	private Manipulable.Character GetCharacterByName(string name)
+    private GameObject GetGameObjectByCharacter(Manipulable.Character c)
+    {
+        foreach(GameObject g in chars)
+        {
+            if(g.GetComponent<Manipulable.Character>() == c)
+            {
+                return g;
+            }
+        }
+        throw new Exception("Le personnage n'existe pas");
+    }
+
+    private Manipulable.Character GetCharacterByName(string name)
 	{
 		foreach (GameObject g in chars) {
 			if (g.name == name) {
