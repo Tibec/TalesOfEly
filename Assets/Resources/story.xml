@@ -15,13 +15,15 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-     		  		<part char='0'>Cette histoire commence dans le village d'Yggdrasil. Notre personnage principal Ely, jeune fermier qui surveille son troupeau de chèvres.</part>
-					<part char='1'>C'est le milieu de l'après-midi. Il fait beau, l'air est frais. je ferai bien un petit somme …</part>
+					<part char='1'>*etirements* Ouaaaaaaaaah</part>
+					<part char='1'>Il fait beau ...</part>
+					<part char='1'>L'air est frais ...</part>
+					<part char='1'>Je ferais bien un petit somme ...</part>
 				</dialog>
 			</content>
 			<choices>
-				<c goto='3'>Il ne s'endort pas</c>
-				<c goto='2'>Il s'endort</c>
+				<c goto='3'>Tenir bon, et rester éveillé</c>
+				<c goto='2'>Ne pas résister et s'endormir</c>
 			</choices>
 		</scene>
   		<scene id='3' map="colline">

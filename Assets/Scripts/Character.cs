@@ -8,7 +8,7 @@ namespace Manipulable {
 		UP, 
 		DOWN, 
 		LEFT,
-		RIGTH
+		RIGHT
 	};
 
 	public struct Checkpoint {
@@ -138,7 +138,8 @@ namespace Manipulable {
 		private string BuildAnimName(string anim, Orientation o)
 		{
 			// Start animation walk
-			string animName = this.name+" "+anim+" ";
+			string entName = this.name.Contains("Chevre") ? "Chevre" : this.name;
+			string animName = entName+" "+anim+" ";
 			switch (o) {
 			case Orientation.UP:
 				animName += "U";  
@@ -146,7 +147,7 @@ namespace Manipulable {
 			case Orientation.LEFT:
 				animName += "L";  
 				break;
-			case Orientation.RIGTH:
+			case Orientation.RIGHT:
 				animName += "R";  
 				break;
 			case Orientation.DOWN:
