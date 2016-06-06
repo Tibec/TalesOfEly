@@ -45,6 +45,13 @@ public class SmoothCamera : MonoBehaviour {
 		focusPoint.position = new Vector3 (x, y, focusPoint.position.z);
 	}
 
+	public void TeleportTo(int x, int y)
+	{
+		follow = focusPoint;
+		focusPoint.position = new Vector3 (x, y, focusPoint.position.z);
+		tkcamera.transform.position = new Vector3 (x, y, focusPoint.position.z);
+	}
+
 	public void FollowTo(Transform c)
 	{
 		follow = c;

@@ -13,25 +13,16 @@
 		<scene id='0' map="colline">
 			<content>
 				<cinematic id='1' />
-        <dialog>
-          <part char='4'>Tu m'en vois navré, jeune homme. Soit, si telle est ta décision</part>
-          <part char='1'>Je suis désolé, ce monde n'est pas le mien... J'ai une famille de l'autre côté. Cependant si par hasard vous les avez vus, je souhaite ramener mes chèvres avec moi.</part>
-          <part char='6'>Non, non, on a pas vu de chèvres... T'as vu une chèvre, toi? Pas du tout...</part>
-          <part char='1'>Bien, elles doivent être de l'autre coté de la forêt.</part>
-          <part char='0'>Ely se dirige donc le portail et le traverse. Toujours sous le choc, il se demande s'il a fait le bon choix. Il aperçoit alors une de ces chèvres, puis le reste du troupeau.</part>
-          <part char='0'>Notre jeune aventurier retrouve le sourire et rentre avec ces chèvres.</part>
-          <part char='0'>Une fois rentrée il raconte à sa mère, toute son aventure</part>
-          <part char='0'>A peine avait-il commencé...</part>
-          <part char='2'>Qu'as tu fait!? Ne sais tu pas que ces lieux sont interdits?</part>
-          <part char='0'>Chez les Voxen, la soirée se termine sous le poids du silence.</part>
-          <part char='1'>Je vais donc aller... me coucher.</part>
-          <part char='0'>Cette aventure marquera la vie de Ely. Il passera cette nuit à douter de tout ce qu'il croit vrai et évident...</part>
-          <part char='0'>Pour le restant de ces jours, jamais il n'essayera, malgré l'envie, de pénétrer le monde des elfes.</part>
-        </dialog>
+				<dialog>
+					<part char='1'>*etirements* Ouaaaaaaaaah</part>
+					<part char='1'>Il fait beau ...</part>
+					<part char='1'>L'air est frais ...</part>
+					<part char='1'>Je ferais bien un petit somme ...</part>
+				</dialog>
 			</content>
 			<choices>
-				<c goto='3'>Il ne s'endort pas</c>
-				<c goto='2'>Il s'endort</c>
+				<c goto='3'>Tenir bon, et rester éveillé</c>
+				<c goto='2'>Ne pas résister et s'endormir</c>
 			</choices>
 		</scene>
   		<scene id='3' map="colline">

@@ -29,6 +29,7 @@ public class StoryManager {
 		}
 		throw new Exception ("Cannot found scene id :" + id);
 	}
+
 	public Character GetCharacter(int id) {
 		foreach (Character s in chars) {
 			if (s.Id == id)
@@ -41,8 +42,10 @@ public class StoryManager {
     {
         foreach (Character s in chars)
         {
-            if (s.Name == name)
+            if (s.Name == name) { 
                 return s;
+                Debug.Log("Found Character by name " + s);
+            }
         }
         throw new Exception("Cannot found char name :" + name);
     }

@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if (stepInProgress == false) {
+			Debug.Log ("Etape : " + step + "/" + scene.Content.Count);
+
 			stepInProgress = true;
 			if (step > scene.Content.Count) { // On doit demarre la nouvelle étape de la scene
 				Reset ();
@@ -79,6 +81,7 @@ public class GameManager : MonoBehaviour {
 					stepInProgress = false;
 					choiceUI.SetActive (false);
 				}
+					
 			} else {
 				// check if the current scene item is finished 
 				Content c = scene.Content [step];
@@ -88,6 +91,7 @@ public class GameManager : MonoBehaviour {
 						dialogUI.SetActive (false);
 						dialogUiScript.Reset ();
 						step++;
+						stepInProgress = false;
 					}
 				} else { // (c.get_type () == content_type.CINEMATIC) 
 					cinematicMgr.Update();
@@ -125,7 +129,11 @@ public class GameManager : MonoBehaviour {
 
 		res.Add (Resources.Load ("ElyM") as GameObject);
 		res.Add (Resources.Load ("ElyF") as GameObject);
-		res.Add (Resources.Load ("Chevre") as GameObject);
+		res.Add (Resources.Load ("Chevre1") as GameObject);
+		res.Add (Resources.Load ("Chevre2") as GameObject);
+		res.Add (Resources.Load ("Chevre3") as GameObject);
+		res.Add (Resources.Load ("Chevre4") as GameObject);
+		res.Add (Resources.Load ("Chevre5") as GameObject);
 		res.Add (Resources.Load ("Mother") as GameObject);
 
 		foreach (GameObject c in res){

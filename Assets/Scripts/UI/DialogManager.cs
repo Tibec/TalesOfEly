@@ -55,6 +55,7 @@ public class DialogManager : tk2dUIBaseDemoController {
             SpriteRenderer sr = currentPortrait.GetComponent<SpriteRenderer>();
             Character c = StoryManager.Instance.GetCharacter(speakers[currentText]);
             string filename = c.Profile;
+
             if (c.Name == "Ely")
             {
                 if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
@@ -64,6 +65,7 @@ public class DialogManager : tk2dUIBaseDemoController {
                     filename = "ElyF";
                 }
             }
+
             string path = "Faces/" + filename;
             Sprite inputTexture = Resources.Load<Sprite>(path);
             if (inputTexture == null)
