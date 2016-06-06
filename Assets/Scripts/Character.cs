@@ -145,6 +145,7 @@ namespace Manipulable {
 		{
 			// Start animation walk
 			string entName = this.name.Contains("Chevre") ? "Chevre" : this.name;
+			entName = entName.Contains("Elfe") ? "Elfes" : entName;
 			string animName = entName+" "+anim+" ";
 			switch (o) {
 			case Orientation.UP:
@@ -171,6 +172,13 @@ namespace Manipulable {
 			r.x = Mathf.Round (r.x * p) / p;
 			r.y = Mathf.Round (r.y* p) / p;
 			return r;
+		}
+
+		public void clearMoves(){
+			while(paths.Count > 0) {
+				paths.Dequeue ();
+				Debug.Log (paths.Count);
+			}
 		}
 	}
 

@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour {
 						stepInProgress = false;
 					} else {
 						dialogUI.SetActive (false);
+						//creer un wait pour la terminaison des mouvements dejà en execution
+						//Alors scene noire pendant les derniers mouvements.
 						choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
 						choiceUI.SetActive (true);
 					}
@@ -141,6 +143,10 @@ public class GameManager : MonoBehaviour {
 		res.Add (Resources.Load ("Chevre4") as GameObject);
 		res.Add (Resources.Load ("Chevre5") as GameObject);
 		res.Add (Resources.Load ("Mother") as GameObject);
+		res.Add (Resources.Load ("Elfe") as GameObject);
+		res.Add (Resources.Load ("Elfe2") as GameObject);
+		res.Add (Resources.Load ("Elfe3") as GameObject);
+		res.Add (Resources.Load ("Elfe4") as GameObject);
 
 		foreach (GameObject c in res){
 			GameObject g = Instantiate (c);

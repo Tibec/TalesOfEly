@@ -120,10 +120,23 @@ public class Cinematics
 		ch5.WalkTo (18, 15, Orientation.DOWN);
 		ch5.WalkTo (25, 14, Orientation.RIGHT);
 
-		timer = 2f;
+		timer = 20f;
 	}
 
 	private void play_colline_2() {
+		AudioMgr.instance.PlayMusic("CollineAmb");
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.clearMoves ();
+		c.TeleportTo (13, 21);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+		c.WalkTo (13, 22, Orientation.DOWN);
+		c.TeleportTo (13, 21);
+		c.WalkTo (13, 22, Orientation.DOWN);
+		c.TeleportTo (13, 21);
+		c.WalkTo (13, 22, Orientation.DOWN);
+		c.TeleportTo (13, 21);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
 		timer = 0f;
 	}	
 	private void play_colline_3() {
@@ -145,7 +158,42 @@ public class Cinematics
 		timer = 0f;
 	}
 	private void play_colline_9() {
-		timer = 0f;
+		//AudioMgr.instance.PlayMusic("CollineAmb");
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.TeleportTo (31, 9);
+		camera.GetComponent<SmoothCamera> ().TeleportTo (31, 9);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+		Manipulable.Character ch1, ch2, ch3, ch4, ch5;
+		ch1 = GetCharacterByName ( "Chevre1");
+		ch2 = GetCharacterByName ( "Chevre2");
+		ch3 = GetCharacterByName ( "Chevre3");
+		ch4 = GetCharacterByName ( "Chevre4");
+		ch5 = GetCharacterByName ( "Chevre5");
+
+		ch1.TeleportTo (32, 9);
+		ch2.TeleportTo (33, 9);
+		ch3.TeleportTo (27, 20);
+		ch4.TeleportTo (17, 14);
+		ch5.TeleportTo (18, 22);
+
+		ch1.RunTo (45, 9, Orientation.RIGHT	);
+
+		ch2.RunTo (45, 9, Orientation.RIGHT);
+
+		ch3.WalkTo (18, 20, Orientation.LEFT);
+		ch3.WalkTo (18, 15, Orientation.RIGHT);
+
+		ch4.WalkTo (10, 14, Orientation.LEFT);
+		ch4.WalkTo (17, 14, Orientation.RIGHT);
+		ch4.WalkTo (10, 14, Orientation.LEFT);
+		ch4.WalkTo (17, 14, Orientation.RIGHT);
+
+		ch5.WalkTo (18, 15, Orientation.DOWN);
+		ch5.WalkTo (25, 14, Orientation.RIGHT);
+
+		timer = 2f;
 	}
 	private void play_colline_10() {
 		timer = 0f;
@@ -157,25 +205,104 @@ public class Cinematics
 		timer = 0f;
 	}
 	private void play_colline_13() {
-		timer = 0f;
+		Manipulable.Character c;
+		c = GetCharacterByName (mcName);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+		c.RunTo (43, 9, Orientation.RIGHT	);
+		c.RunTo (43, 0, Orientation.DOWN);
+		timer = 5f;
 	}
 	private void play_colline_14() {
 		timer = 0f;
 	}
 	private void play_chemincolvil_1() {
-		timer = 0f;
+		//AudioMgr.instance.PlayMusic("CollineAmb");
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.TeleportTo (12, 1);
+		camera.GetComponent<SmoothCamera> ().TeleportTo (12,1);
+		Manipulable.Character ch1, ch2, ch3, ch4, ch5;
+		ch1 = GetCharacterByName ( "Chevre1");
+		ch2 = GetCharacterByName ( "Chevre2");
+		ch3 = GetCharacterByName ( "Chevre3");
+		ch4 = GetCharacterByName ( "Chevre4");
+		ch5 = GetCharacterByName ( "Chevre5");
+		ch1.TeleportTo (11, 1);
+		ch2.TeleportTo (13, 1);
+		ch3.TeleportTo (11, 0);
+		ch4.TeleportTo (12, 0);
+		ch5.TeleportTo (13, 0);
+		c.WalkTo (12, 40, Orientation.UP);
+		ch1.WalkTo (11, 40, Orientation.UP);
+		ch2.WalkTo (13, 40, Orientation.UP);
+		ch3.WalkTo (11, 40, Orientation.UP);
+		ch4.WalkTo (12, 40, Orientation.UP);
+		ch5.WalkTo (13, 40, Orientation.UP);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+
+		timer = 28f;
 	}
 	private void play_chemincolvil_2() {
-		timer = 0f;
+		//AudioMgr.instance.PlayMusic("CollineAmb");
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.TeleportTo (24, 18);
+		camera.GetComponent<SmoothCamera> ().TeleportTo (12,1);
+		Manipulable.Character ch1, ch2, ch3, ch4, ch5;
+		ch1 = GetCharacterByName ( "Chevre1");
+		ch2 = GetCharacterByName ( "Chevre2");
+		ch1.TeleportTo (25, 18);
+		ch2.TeleportTo (26, 18);
+		c.WalkTo (12, 18, Orientation.LEFT);
+		c.WalkTo (12, 40, Orientation.UP);
+		ch1.WalkTo (12, 18, Orientation.LEFT);
+		ch1.WalkTo (11, 40, Orientation.UP);
+		ch2.WalkTo (12, 18, Orientation.LEFT);
+		ch2.WalkTo (13, 40, Orientation.UP);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+
+		timer = 20f;
 	}
 	private void play_village_1() {
-		timer = 0f;
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.TeleportTo (10, 2);
+		camera.GetComponent<SmoothCamera> ().TeleportTo (10,2);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+		Manipulable.Character m;
+		m = GetCharacterByName ( "Mother");
+		m.TeleportTo (25, 18);
+		m.LookTo (Orientation.DOWN);
+		c.WalkTo (10, 14, Orientation.UP);
+		c.WalkTo (20, 16, Orientation.RIGHT);
+		c.LookTo (Orientation.UP);
+
+		timer = 15f;
 	}
 	private void play_foret_1() {
-		timer = 0f;
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		c.TeleportTo (0	, 32);
+		c.RunTo (24, 32, Orientation.RIGHT);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+		timer = 5f;
 	}
 	private void play_foret_2() {
-		timer = 0f;
+		Manipulable.Character c;
+		c = GetCharacterByName ( mcName);
+		Manipulable.Character ch = GetCharacterByName ("Chevre1");
+		c.RunTo (24, 16, Orientation.DOWN);
+		c.RunTo (64, 8, Orientation.RIGHT);
+		c.RunTo (64, 38, Orientation.UP	);
+		ch.TeleportTo (62, 40);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
+
+		timer = 20f;
 	}
 	private void play_foret_3() {
 		timer = 0f;
@@ -208,9 +335,41 @@ public class Cinematics
 		timer = 0f;
 	}
 	private void play_finale_1() {
+		camera.GetComponent<SmoothCamera> ().TeleportTo (44, 2);
+		Manipulable.Character c, b, g;
+		c = GetCharacterByName ( mcName);
+		b = GetCharacterByName ( "Badman");
+		g = GetCharacterByName ( "grandpere");
+		b.TeleportTo (20, 41);
+		c.TeleportTo (18, 38);
+		g.TeleportTo (22, 38);
+		camera.GetComponent<SmoothCamera> ().TeleportTo (20, 40);
+
 		timer = 0f;
 	}
 	private void play_finale_2() {
+		timer = 0f;
+	}
+
+	private void play_village_elfes_1(){
+		camera.GetComponent<SmoothCamera> ().TeleportTo (44, 2);
+		Manipulable.Character c, e1, e2, e3, e4;
+		c = GetCharacterByName ( mcName);
+		e1 = GetCharacterByName ("Elfe");
+		e2 = GetCharacterByName ("Elfe2");
+		e3= GetCharacterByName ("Elfe3");
+		e4 = GetCharacterByName ("Elfe4");
+		c.TeleportTo (44, 4);
+		c.LookTo (Orientation.UP);
+		e1.TeleportTo (43, 7);
+		e2.TeleportTo (40, 7);
+		e3.TeleportTo (41, 10);
+		e4.TeleportTo (42, 10);
+		e1.RunTo (43, 6, Orientation.DOWN);
+		e2.RunTo (40, 6, Orientation.DOWN);
+		e3.RunTo (41, 9, Orientation.DOWN);
+		e4.RunTo (42, 9, Orientation.DOWN);
+		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
 		timer = 0f;
 	}
 }

@@ -204,17 +204,18 @@
 			<cinematic id='1' />
 			<dialog>
 				<part char='1'>*voix tremblante* Pourquoi cette forêt est-elle interdite déjà ?</part>
-				<part char='1'>Que dit la légende, déjà?</part>
 				<part char='1'>*voix tremblante* Que dit la légende, déjà?</part>
 				<part char='1'>*fouille dans ses souvenirs*</part>
 				<part char='1'>Je crois qu'il y a très, très longtemps, cette forêt était occupée par des créatures fantastiques, dragons, phénix, elfes ...</part>
 				<part char='1'>Mais je crois que les humains, avide de richesses, leur ont livré une bataille sans merci à l'issue de laquelle ils furent vainqueurs.</part>
 				<part char='1'>Cependant, avant de disparaitre, je crois qu'une malédiction a était lancée sur cette forêt ...</part>
 				<part char='1'>Eh ! Je reconnais ces empruntes, ce sont celle de chêvres ! </part>
-				<part char='0'>Ainsi, Ely retrouve une des chèvres, figée devant ce qui lui semble être un portail magique.</part>
+			</dialog>
+			<cinematic id='2' />
+			<dialog>
 				<part char='1'>Qu'est-ce ?</part>
 				<part char='1'>Sait tu ou est passé l'autre ?</part>
-				<part char='7'>Bêêêh ! *désigne le portail*</part>
+				<part char='5'>Bêêêh ! *désigne le portail*</part>
 				<part char='1'>Ouah, serait-ce un ... portail ?</part>
 				<part char='1'>Ceux dont il est fait mention dans les légendes ?</part>
 				<part char='1'>*se sent aspiré* AAAAAAHHH... mais qu'est ce que...?</part>
@@ -376,7 +377,7 @@
 					<part char='1'>Non je ne peux pas... Je ne suis pas de taille à affronter un tel démon !</part>
 					<part char='0'>Ely court se mettre en retrait, laissant les elfes affronter le démon seul.</part>
 					<part char='0'>L'avantage du démon est incontestable. Les elfes se font balayer, laissant Ely et l'Ancien à la merci du démon.</part>
-					<part char='0'>Terrorisés en sans défense, le démon les tue sans pitié.</part>
+					<part char='0'>Terrorisés et sans défense, le démon les tue sans pitié.</part>
 				</dialog>
 			</content>
 			<choices>
@@ -391,7 +392,7 @@
 					<part char='1'>Non je ne peux pas... Je ne suis pas de taille à affronter un tel démon !</part>
 					<part char='0'>Ely court se mettre en retrait, laissant les elfes affronter le démon seul.</part>
 					<part char='0'>L'avantage du démon est incontestable. Les elfes se font balayer, laissant Ely et l'Ancien à la merci du démon.</part>
-					<part char='0'>Terrorisés en sans défense, le démon les tue sans pitié.</part>
+					<part char='0'>Terrorisés et sans défense, le démon les tue sans pitié.</part>
 				</dialog>
 			</content>
 		</scene>
@@ -399,13 +400,6 @@
 		 <scene id='61' fin="true" map="noir">
 			<content>
 				<cinematic id='4' />
-				<dialog>
-					<part char='1'>Allons-y !!!</part>
-					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
-					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
-					<part char='0'>Après une longue soirée de célébration de la mort du tyran, et une bonne nuit de récupération, Ely décide de rentrer dans le monde des humains. Sa mère, d'abord énervée de ses péripéties, finient par lui epxliquer d'où lui viennent ses mystérieux pouvoirs.</part>
-					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
-				</dialog>
 			</content>
 			<choices>
 				<c goto='62'>Go combat fail</c>
@@ -417,11 +411,9 @@
 				<cinematic id='5' />
 				<dialog>
 					<part char='1'>Allons-y !!!</part>
-					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
+					<part char='4'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
 					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
-					<part char='0'>Après une longue soirée de célébration de la mort du tyran, et une bonne nuit de récupération, Ely décide de rentrer dans le monde des humains. Sa mère, d'abord énervée de ses péripéties, finient par lui epxliquer d'où lui viennent ses mystérieux pouvoirs.</part>
-					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
-				</dialog>
+					</dialog>
 			</content>
 			<choices>
 				<c goto='63'>Go combat fail</c>
@@ -432,11 +424,7 @@
 			<content>
 				<cinematic id='2' />
 				<dialog>
-					<part char='1'>Allons-y !!!</part>
-					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
-					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
 					<part char='0'>Après une longue soirée de célébration de la mort du tyran, et une bonne nuit de récupération, Ely décide de rentrer dans le monde des humains. Sa mère, d'abord énervée de ses péripéties, finient par lui epxliquer d'où lui viennent ses mystérieux pouvoirs.</part>
-					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
 				</dialog>
 			</content>
 			<choices>
@@ -448,10 +436,6 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-					<part char='1'>Allons-y !!!</part>
-					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
-					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
-					<part char='0'>Après une longue soirée de célébration de la mort du tyran, et une bonne nuit de récupération, Ely décide de rentrer dans le monde des humains. Sa mère, d'abord énervée de ses péripéties, finient par lui epxliquer d'où lui viennent ses mystérieux pouvoirs.</part>
 					<part char='0'> La mère d'Ely est tombée amoureuse dans sa jeunesse d'un prince Elfe. Ce dernier est mort quelques années plus tard, peu après la naissance d'Ely. Ne parvenant pas à faire son deuil, sa mère avait décidé de couper tout contact avec ce monde. </part>
 				</dialog>
 			</content>
