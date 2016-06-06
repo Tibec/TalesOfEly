@@ -53,10 +53,11 @@ public class GameManager : MonoBehaviour {
 						PlayerData.Instance.Scene = scene.Choices [0].get_next_scene ();
 						step++;
 						stepInProgress = false;
+					} else {
+						dialogUI.SetActive (false);
+						choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
+						choiceUI.SetActive (true);
 					}
-					dialogUI.SetActive (false);
-					choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
-					choiceUI.SetActive (true);
 				}
 			} else { // Traitement de l'étape
 				Content c = scene.Content [step];
