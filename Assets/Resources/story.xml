@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <story>
 	<characters>
-    <char id='0' face="narrateur.psd" >Narrateur</char>
-	<char id='1' face="" >Ely</char>
-	<char id='2' face="ElyMother.psd" >Mère d'Ely</char>
-    <char id='3' face="Elfe.png" >Elfe</char>
-    <char id='6' face="Elfe.png" >Tous les elfes</char>
-	<char id='4' face="vieux elfe.psd" >Le grand-père</char>
-    <char id='5' face="chevre.png" >Chèvre</char>
+    <char id='0' face="narrateur" >Narrateur</char>
+	<char id='1' face="ElyM" >Ely</char>
+	<char id='2' face="ElyMother" >Mère d'Ely</char>
+    <char id='3' face="Elfe" >Elfe</char>
+    <char id='6' face="Elfe" >Tous les elfes</char>
+	<char id='4' face="vieux elfe" >Le grand-père</char>
+    <char id='5' face="chevre" >Chèvre</char>
 	</characters>
 	<scenes>
 		<scene id='0' map="colline">

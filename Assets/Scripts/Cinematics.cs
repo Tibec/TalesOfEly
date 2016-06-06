@@ -131,6 +131,6 @@ public class Cinematics
 		ch5.WalkTo (18, 15, Orientation.DOWN);
 		ch5.WalkTo (25, 14, Orientation.RIGHT);
 
-		timer = 20f;
+		timer = 2f;
 	}
 }

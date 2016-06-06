@@ -44,7 +44,6 @@ public class StoryManager {
         {
             if (s.Name == name) { 
                 return s;
-                Debug.Log("Found Character by name " + s);
             }
         }
         throw new Exception("Cannot found char name :" + name);

@@ -36,12 +36,16 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	public void OnEnable()
 	{
-		// Affichage + bind event
-		currentText = 0;
+        // Affichage + bind event
+        
+
+        currentText = 0;
 		if (texts.Count > 0) {
 			textContainer.text = texts [0].Substring (0, (texts [0].Length < charPerLine ? texts [0].Length : charPerLine));
 			speakerTextContainer.text = speakers [0];
-		}
+            setCharacterPortrait(speakerTextContainer.text);
+
+        }
 	}
 
 	public void OnMouseDown()
@@ -51,33 +55,39 @@ public class DialogManager : tk2dUIBaseDemoController {
 			finished = true;
 		} else {
 			textContainer.text = texts [currentText];
-			speakerTextContainer.text = speakers [currentText];
-            SpriteRenderer sr = currentPortrait.GetComponent<SpriteRenderer>();
-            Character c = StoryManager.Instance.GetCharacter(speakers[currentText]);
-            string filename = c.Profile;
+            speakerTextContainer.text = speakers[currentText];
 
-            if (c.Name == "Ely")
-            {
-                if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
-                    filename = "ElyM";
-                else
-                {
-                    filename = "ElyF";
-                }
-            }
-
-            string path = "Faces/" + filename;
-            Sprite inputTexture = Resources.Load<Sprite>(path);
-            if (inputTexture == null)
-                Debug.Log("inputTexture NULL!");
-            else
-            {
-                Debug.Log("Found "+ speakers[currentText]);
-            }
-            sr.sprite = inputTexture;
+            //if (c.Name == "Ely")
+            //{
+            //    if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
+            //        filename = "ElyM";
+            //    else
+            //    {
+            //        filename = "ElyF";
+            //    }
+            //}
+            
         }
-	}
+        setCharacterPortrait(speakerTextContainer.text);
 
+    }
+    private void setCharacterPortrait(string speaker)
+    {
+        SpriteRenderer sr = currentPortrait.GetComponent<SpriteRenderer>();
+        Character c = StoryManager.Instance.GetCharacter(speakers[currentText]);
+        string filename = c.Profile;
+
+        Debug.Log("Found Character by name " + c.Name);
+        string path = "Faces/" + filename;
+        Sprite inputTexture = Resources.Load<Sprite>(path);
+        if (inputTexture == null)
+            Debug.Log("Face not found : ");
+        else
+        {
+            Debug.Log("Face found " + c.Name);
+        }
+        sr.sprite = inputTexture;
+    }
 	public void OnDisable()
 	{
 		texts.Clear ();
