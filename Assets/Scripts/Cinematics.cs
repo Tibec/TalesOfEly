@@ -14,9 +14,11 @@ public class Cinematics
 	// Tuning options
 	private float camSpeed;
 
+
 	//
 	Vector2 destination;
 	Manipulable.Character target;
+	string mcName;
 
 	// Accesseur des composants de la scene;
 	private tk2dCamera camera;
@@ -32,6 +34,8 @@ public class Cinematics
 	{
 		camera = _camera;
 		chars = _chars;
+		mcName = PlayerData.Instance.Avatar == PlayerData.AvatarType.Male ? "ElyM" : "ElyF";
+
 	}
 
 	public void Update()
@@ -72,10 +76,7 @@ public class Cinematics
 	{
         AudioMgr.instance.PlayMusic("CollineAmb");
 		Manipulable.Character c;
-		if(PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
-			c = GetCharacterByName ( "ElyM");
-		else 
-			c = GetCharacterByName ( "ElyF");	
+		c = GetCharacterByName ( mcName);
 		c.TeleportTo (30, 23);
 		camera.GetComponent<SmoothCamera> ().TeleportTo (30, 23);
 		camera.GetComponent<SmoothCamera> ().FollowTo (c.transform);
@@ -183,6 +184,15 @@ public class Cinematics
 		timer = 0f;
 	}
 	private void play_noir_1() {
+		camera.GetComponent<SmoothCamera> ().TeleportTo (-3, -1);
+		Manipulable.Character m, e;
+		m = GetCharacterByName ("Mother");
+		e = GetCharacterByName (mcName);
+		m.TeleportTo (-5, 0);
+		m.LookTo (Orientation.RIGHT);
+		e.TeleportTo (0, 0);
+		e.LookTo (Orientation.LEFT);
+
 		timer = 0f;
 	}
 	private void play_noir_2() {

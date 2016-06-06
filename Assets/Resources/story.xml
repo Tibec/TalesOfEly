@@ -14,10 +14,10 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-					<part char='1'>*etirements* Ouaaaaaaaaah</part>
+					<part char='1'>*étirements* Ouaaaaaaaaah</part>
 					<part char='1'>Il fait beau ...</part>
 					<part char='1'>L'air est frais ...</part>
-					<part char='1'>Je ferais bien un petit somme ...</part>
+					<part char='1'>*baille* Je ferais bien un petit somme ...</part>
 				</dialog>
 			</content>
 			<choices>
@@ -105,6 +105,7 @@
 		
 	<scene id='4' map="noir">
 			<content>
+				<cinematic id='1' />
 				<dialog>
 					<part char='1'>Maman ?</part>
 					<part char='2'>Oui ?</part>

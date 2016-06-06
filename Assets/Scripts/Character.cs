@@ -110,6 +110,12 @@ namespace Manipulable {
 			MoveTo (x, y, o);
 		}
 
+		public void LookTo(Orientation o)
+		{
+			string a = BuildAnimName ("Idle", o);
+			anims.Play (a);
+		}
+
 		public void WalkTo(int x, int y,Orientation o)
 		{
 			running = false;
