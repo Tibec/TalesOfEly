@@ -41,7 +41,7 @@
 					  <part char='1'>Tiens ?!</part>
 					  <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
 					  <part char='1'>J'ai pourtant pas rêvé …</part>
-					  <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
+					  <part char='0'>Ely rentre chez lui, et intrigué il se demande s'il devrait en parler à sa mère</part>
 					</dialog>
 					<cinematic id='3' />
 					<cinematic id='4' />
@@ -92,7 +92,7 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-			        <part char='1'>*J'ai quand même pas rêvé, je me suis bien égratiné, mais il n'y a rien ... *</part>
+			        <part char='1'>*J'ai quand même pas rêvé, je me suis bien égratigné, mais il n'y a rien ... *</part>
 			        <part char='1'>*Peut-être que maman sait quelque chose ...*</part>
 			        <part char='1'>*Mais en même temps elle risque de me prendre pour un fou ...*</part>
 				</dialog> 
@@ -112,7 +112,7 @@
 					<part char='1'>Tout à l'heure, je me suis accidentellement écorché sur un buisson, et quand j'ai voulu bander ma blessure il n'y avait rien ...</part>
 					<part char='2'>*silence*</part>
 					<part char='2'>Hem, ...., tu es sûr ?</part>
-					<part char='2'>Tu es certains de ne pas avoir rêvé ? Je sais que ca t'arrive souvent de t'endormir sous l'arbre !</part>
+					<part char='2'>Tu es certain de ne pas avoir rêvé ? Je sais que ca t'arrive souvent de t'endormir sous l'arbre !</part>
 					<part char='1'>*Je crois que je vais éviter d'insister*</part>
 					<part char='1'>*Mais c'est quand même bizarre*</part>
 				</dialog>
@@ -128,12 +128,12 @@
         <cinematic id='10'/>
         <cinematic id='11'/>
         <dialog>
-			<part char='1'>Avant de rentrer je vais réessayé ...</part>
+			<part char='1'>Avant de rentrer je vais réessayer ...</part>
 			<part char='1'>Bon. Je vais être fixé.</part>
 			<part char='1'>Aie !</part>
 			<part char='0'>Une, deux, trois gouttes de sang coulent ...</part>
-			<part char='0'>Puis la blessure ce referme.</part>
-			<part char='1'>*abassourdis* Oh mon Dieu</part>
+			<part char='0'>Puis la blessure se referme.</part>
+			<part char='1'>*abassourdi* Oh mon Dieu</part>
 			<part char='1'>*recommence*</part>
 			<part char='1'>*recommence*</part>
 			<part char='1'>*recommence*</part>
@@ -178,14 +178,14 @@
 				  <part char='1'>elles sont partis dans la forêt ...</part>
 				  <part char='1'>Nous devrions aller la chercher, elle doit être effrayée en ce mo--- </part>
 				  <part char='2'>Non, sûrement pas!</part>
-				  <part char='1'>*surpris* Mais... Mais pourquoi ? N'est-ce pas le role d'un fermier de protéger son troupeau?</part>
-				  <part char='2'>J'ai dit non un point c'est tout! L'accès a la forêt interdite est interdit pour de bonnes raisons !</part>
+				  <part char='1'>*surpris* Mais... Mais pourquoi ? N'est-ce pas le rôle d'un fermier de protéger son troupeau?</part>
+				  <part char='2'>J'ai dit non un point c'est tout! L'accès à la forêt interdite est interdit pour de bonnes raisons !</part>
 				  <part char='1'>Je vais donc aller... me coucher.</part>
 				  <part char='1'>Bonne nuit.</part>
 				  <part char='2'>Bonne nuit mon chéri</part>
 				  <part char='0'>Cette discussion pique momentanément la curiosité d'Ely.</part>
 				  <part char='0'>Il passe toute cette nuit à y réfléchir...</part>
-				  <part char='0'>A terme, Ely conclut qu'il doit bien avoir une raison pour sa mère soit totalement contre cette idée.</part>
+				  <part char='0'>A terme, Ely conclut qu'il doit bien avoir une raison pour que sa mère soit totalement contre cette idée.</part>
 				  <part char='1'>Elle veut surement me protéger. Comme toutes les mères. Je ferai mieux de ne pas insister</part>
 			</dialog>
       </content>
@@ -196,7 +196,7 @@
 			<cinematic id='13'/>
 		</content>
 		<choices>
-			<c goto='6'>Direction la foret</c>
+			<c goto='6'>Direction la forêt</c>
 		</choices>
 	</scene>
 	<scene id='6' map="foret">
@@ -207,14 +207,14 @@
 				<part char='1'>*voix tremblante* Que dit la légende, déjà?</part>
 				<part char='1'>*fouille dans ses souvenirs*</part>
 				<part char='1'>Je crois qu'il y a très, très longtemps, cette forêt était occupée par des créatures fantastiques, dragons, phénix, elfes ...</part>
-				<part char='1'>Mais je crois que les humains, avide de richesses, leur ont livré une bataille sans merci à l'issue de laquelle ils furent vainqueurs.</part>
-				<part char='1'>Cependant, avant de disparaitre, je crois qu'une malédiction a était lancée sur cette forêt ...</part>
-				<part char='1'>Eh ! Je reconnais ces empruntes, ce sont celle de chêvres ! </part>
+				<part char='1'>Mais je crois que les humains, avides de richesses, leur ont livré une bataille sans merci à l'issue de laquelle ils furent vainqueurs.</part>
+				<part char='1'>Cependant, avant de disparaitre, je crois qu'une malédiction a été lancée sur cette forêt ...</part>
+				<part char='1'>Eh ! Je reconnais ces empruntes. Ce sont celles d'une chêvre ! </part>
 			</dialog>
 			<cinematic id='2' />
 			<dialog>
 				<part char='1'>Qu'est-ce ?</part>
-				<part char='1'>Sait tu ou est passé l'autre ?</part>
+				<part char='1'>Sais-tu où est passée l'autre ?</part>
 				<part char='5'>Bêêêh ! *désigne le portail*</part>
 				<part char='1'>Ouah, serait-ce un ... portail ?</part>
 				<part char='1'>Ceux dont il est fait mention dans les légendes ?</part>
@@ -230,7 +230,7 @@
 			<cinematic id='1'/>
 			<dialog>
 				<part char='1'>OUAAAAAAAAAAAAAAAAAAAH !!</part>
-				<part char='1'>*Reprend ses esprits* Cet endroit est vraiment étranges ....</part>
+				<part char='1'>*Reprend ses esprits* Cet endroit est vraiment étrange ....</part>
 				<part char='1'>Le ciel est vert, le soleil est violet ...</part>
 				<part char='1'>*sent quelque chose effleurer son visage*</part>
 				<part char='3'>Qui êtes-vous ?!</part>
@@ -251,17 +251,17 @@
 				<part char='4'>Et comment as tu fait pour arriver ici?</part>
 				<part char='1'>Eh bien... Le portail. C'est évident. D'ailleurs, c'est très dangereux de le laisser à la portée de tous.</part>
 				<part char='0'>L'Ancien se rend donc compte que notre jeune aventurier est ignorant de ce monde. Il en déduit qu'il ne représente pas une menace.</part>
-				<part char='0'>De plus le jeune Ely, a pu pénétrer ce monde. Ce jeune a donc nécessairement une essence magique.</part>
+				<part char='0'>De plus le jeune Ely, a pu pénétrer ce monde. Ce jeune a donc nécessairement une énergie magique.</part>
 				<part char='4'>Allons, libérer ce jeune homme. Il n'est pas une menace pour nous... Bien au contraire (le sourire aux lèvres, en détachant Ely)</part>
 				<part char='0'>Au contact de l’Ancien Ely ressent une présence très forte, écrasante.</part>
-				<part char='4'>Ce que tu ressens est mon essence magique. Etant le plus âgé de ce village, il est normal que tu sois impressionné par mon énergie magique</part>
+				<part char='4'>Ce que tu ressens est mon énergie magique. Etant le plus âgé de ce village, il est normal que tu sois impressionné par mon énergie magique</part>
 				<part char='4'>Tu as pu détecter mon essence sans avoir vécu dans ce monde. Pour quelqu'un qui vit avec les humains, tes capacités sont impressionantes.</part>
 				<part char='4'>Elles nous seraient d'ailleurs bien utiles. Acceptes-tu de rester parmis nous un peu plus longtemps, jeune homme?</part>
 			</dialog>
 		</content>
 		<choices>
 			<c goto='9'>Cela va trop loin, vous ne voulez que rentrer chez vous.</c>
-			<c goto='8'>Intrigué par ce qu'a dit l'ancien, vous souhaitais rester pour en apprendre d'avantage.</c>
+			<c goto='8'>Intrigué par ce qu'a dit l'ancien, vous souhaitez rester pour en apprendre d'avantage.</c>
 		</choices>
 	</scene>
     
@@ -308,7 +308,7 @@
 			<content>
 				<cinematic id='1' />
 				<dialog>
-					<part char='0'>Une fois rentrée il raconte à sa mère, toute son aventure</part>
+					<part char='0'>Une fois rentré il raconte à sa mère, toute son aventure</part>
 					<part char='0'>A peine avait-il commencé...</part>
 					<part char='2'>Qu'as tu fait!? Ne sais tu pas que ces lieux sont interdits?</part>
 					<part char='0'>Chez les Voxen, la soirée se termine sous le poids du silence.</part>
@@ -411,7 +411,7 @@
 				<cinematic id='5' />
 				<dialog>
 					<part char='1'>Allons-y !!!</part>
-					<part char='4'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
+					<part char='4'>Ely, tu dois rester concentré et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agis !</part>
 					<part char='0'>Ely écoute les conseils de l'Ancien et tout en protégeant les elfes de son pouvoir magique de guérison, parvient à trouver la faille du démon. Il parvient à frapper au moment opportun et le démon s'écroule.</part>
 					</dialog>
 			</content>

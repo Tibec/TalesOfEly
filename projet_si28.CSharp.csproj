@@ -173,7 +173,9 @@
     <None Include="Assets\Character\Resources\put characters prefabs here.txt" />
     <None Include="Assets\Fonts\OldSansBlack.fnt" />
     <None Include="Assets\Plugins\MusicManager\TestScene\Resources\Music_Licence.txt" />
+    <None Include="Assets\Resources\pahs.txt" />
     <None Include="Assets\Resources\story.xml" />
+    <None Include="Assets\Resources\story_f.xml" />
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
     <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
