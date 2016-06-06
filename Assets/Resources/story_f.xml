@@ -2,7 +2,7 @@
 <story>
 	<characters>
 	    <char id='0' face="narrateur" >Narrateur</char>
-		<char id='1' face="ElyM" >Ely</char>
+		<char id='1' face="ElyF" >Ely</char>
 		<char id='2' face="ElyMother" >Mère d'Ely</char>
 	    <char id='3' face="Elfe" >Elfe</char>
 	    <char id='6' face="Elfe" >Tous les elfes</char>

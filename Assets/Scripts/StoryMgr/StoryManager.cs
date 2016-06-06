@@ -13,6 +13,9 @@ public class StoryManager {
 	List<Character> chars;
 	List<Scene> scenes;
 
+	List<Character> chars_f;
+	List<Scene> scenes_f;
+
 	TextAsset xdoc;
 
 	private StoryManager()
@@ -21,31 +24,54 @@ public class StoryManager {
 	}
 
 	public Scene GetScene(int id) {
-		foreach (Scene s in scenes) {
-			if (s.Id == id) {
-				Debug.Log (s.Map);
-				return s;
+		if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male) {
+			foreach (Scene s in scenes) {
+				if (s.Id == id) {
+					Debug.Log (s.Map);
+					return s;
+				}
+			}
+		} else {
+			foreach (Scene s in scenes_f) {
+				if (s.Id == id) {
+					Debug.Log (s.Map);
+					return s;
+				}
 			}
 		}
 		throw new Exception ("Cannot found scene id :" + id);
 	}
 
 	public Character GetCharacter(int id) {
-		foreach (Character s in chars) {
-			if (s.Id == id)
-				return s;
+		if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male) {
+			foreach (Character s in chars) {
+				if (s.Id == id)
+					return s;
+			}
+		} else {
+			foreach (Character s in chars_f) {
+				if (s.Id == id)
+					return s;
+			}
 		}
 		throw new Exception ("Cannot found char id :" + id);
 	}
 
     public Character GetCharacter(string name)
     {
-        foreach (Character s in chars)
-        {
-            if (s.Name == name) { 
-                return s;
-            }
-        }
+		if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male) {
+			foreach (Character s in chars) {
+				if (s.Name == name) { 
+					return s;
+				}
+			}
+		} else {
+			foreach (Character s in chars_f) {
+				if (s.Name == name) { 
+					return s;
+				}
+			}
+		}
         throw new Exception("Cannot found char name :" + name);
     }
 
@@ -53,11 +79,16 @@ public class StoryManager {
     {
 		xdoc = Resources.Load("story") as TextAsset;
 		XDocument xdocD = XDocument.Parse(xdoc.text);
-		ParseCharacters(xdocD);
-		ParseScenes (xdocD);
+		ParseCharacters(xdocD, false);
+		ParseScenes (xdocD, false);
+
+		xdoc = Resources.Load("story_f") as TextAsset;
+		xdocD = XDocument.Parse(xdoc.text);
+		ParseCharacters(xdocD, true);
+		ParseScenes (xdocD, true);
 	}
 
-	private void ParseCharacters(XDocument doc)
+	private void ParseCharacters(XDocument doc, bool f)
 	{
 		IEnumerable<XElement> char_tag =
 			(from el in doc.Root.Elements("characters")
@@ -80,10 +111,14 @@ public class StoryManager {
 			//Console.WriteLine (ch);
 
 		}
-		this.chars = l;
+		if (f) {
+			this.chars_f = l;
+		} else {
+			this.chars = l;
+		}
 	}
 
-	private void ParseScenes(XDocument doc)
+	private void ParseScenes(XDocument doc, bool f)
 	{
 		IEnumerable<XElement> _tag =
 			(from el in doc.Root.Elements("scenes")
@@ -170,7 +205,11 @@ public class StoryManager {
 			l.Add(sc);
 			//Console.WriteLine (ch);
 		}
-		this.scenes = l;
+		if (f) {
+			this.scenes_f = l;
+		} else {
+			this.scenes = l;
+		}
 	}
 
 	//-----------------------------------------------------------------
