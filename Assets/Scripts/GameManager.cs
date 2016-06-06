@@ -49,6 +49,11 @@ public class GameManager : MonoBehaviour {
 				if (scene.Choices == null) { // Alors on est a la fin :(
 					UnityEngine.SceneManagement.SceneManager.LoadSceneAsync ("credit");
 				} else {
+					if (scene.Choices.Count == 1) {
+						PlayerData.Instance.Scene = scene.Choices [0].get_next_scene ();
+						step++;
+						stepInProgress = false;
+					}
 					dialogUI.SetActive (false);
 					choiceUiScript.SetChoices (scene.Choices [0].get_text (), scene.Choices [1].get_text ());
 					choiceUI.SetActive (true);
