@@ -197,4 +197,10 @@ public class Cinematics
 	private void play_noir_5() {
 		timer = 0f;
 	}
+	private void play_finale_1() {
+		timer = 0f;
+	}
+	private void play_finale_2() {
+		timer = 0f;
+	}
 }

@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour {
 			return;
 		}
 
-
 		if (scene.Map != UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name) {
 			UnityEngine.SceneManagement.SceneManager.LoadScene(scene.Map);
 			return;
