@@ -83,6 +83,7 @@ public class Cinematics
 
 	private void play_colline_1()
 	{
+        AudioMgr.instance.PlayMusic("CollineAmb");
 		Manipulable.Character c;
 		if(PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
 			c = GetCharacterByName ( "ElyM");
@@ -131,6 +132,6 @@ public class Cinematics
 		ch5.WalkTo (18, 15, Orientation.DOWN);
 		ch5.WalkTo (25, 14, Orientation.RIGHT);
 
-		timer = 20f;
+		timer = 2f;
 	}
 }

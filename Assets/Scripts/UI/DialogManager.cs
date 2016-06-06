@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
+using Entities;
 
 public class DialogManager : tk2dUIBaseDemoController {
 	// Attribute to easily get items //
@@ -11,6 +13,7 @@ public class DialogManager : tk2dUIBaseDemoController {
 	public GameObject textBox;
 	public tk2dTextMesh textContainer;
 	public tk2dTextMesh speakerTextContainer;
+    public GameObject currentPortrait;
 
 	////////////////////////////////////////////
 	private List<string> speakers;
@@ -25,14 +28,24 @@ public class DialogManager : tk2dUIBaseDemoController {
 		Reset ();
 	}
 
+    //public void setCharacterPortrait()
+    //{
+    //    Transform character_portrait = transform.Find("UICamera/UIdialog/CharacterPortrait");
+    //    character_portrait.GetComponent<SpriteRenderer>().sprite = 
+    //}
+
 	public void OnEnable()
 	{
-		// Affichage + bind event
-		currentText = 0;
+        // Affichage + bind event
+        
+
+        currentText = 0;
 		if (texts.Count > 0) {
 			textContainer.text = texts [0].Substring (0, (texts [0].Length < charPerLine ? texts [0].Length : charPerLine));
 			speakerTextContainer.text = speakers [0];
-		}
+            setCharacterPortrait(speakerTextContainer.text);
+
+        }
 	}
 
 	public void OnMouseDown()
@@ -42,10 +55,39 @@ public class DialogManager : tk2dUIBaseDemoController {
 			finished = true;
 		} else {
 			textContainer.text = texts [currentText];
-			speakerTextContainer.text = speakers [currentText];
-		}
-	}
+            speakerTextContainer.text = speakers[currentText];
 
+            //if (c.Name == "Ely")
+            //{
+            //    if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
+            //        filename = "ElyM";
+            //    else
+            //    {
+            //        filename = "ElyF";
+            //    }
+            //}
+            
+        }
+        setCharacterPortrait(speakerTextContainer.text);
+
+    }
+    private void setCharacterPortrait(string speaker)
+    {
+        SpriteRenderer sr = currentPortrait.GetComponent<SpriteRenderer>();
+        Character c = StoryManager.Instance.GetCharacter(speakers[currentText]);
+        string filename = c.Profile;
+
+        Debug.Log("Found Character by name " + c.Name);
+        string path = "Faces/" + filename;
+        Sprite inputTexture = Resources.Load<Sprite>(path);
+        if (inputTexture == null)
+            Debug.Log("Face not found : ");
+        else
+        {
+            Debug.Log("Face found " + c.Name);
+        }
+        sr.sprite = inputTexture;
+    }
 	public void OnDisable()
 	{
 		texts.Clear ();
@@ -73,14 +115,15 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	}
 
+
 	public bool IsFinished()
 	{
 		return finished;
 	}
-
+    
 	public void Reset()
 	{
-		texts = new List<string> ();
+        texts = new List<string> ();
 		speakers = new List<string> ();
 		finished = false;
 	}
@@ -89,4 +132,5 @@ public class DialogManager : tk2dUIBaseDemoController {
 	public void Update () {
 
 	}
+   
 }

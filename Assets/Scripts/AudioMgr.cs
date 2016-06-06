@@ -28,14 +28,24 @@ namespace SoundManager
         }
 
 
-        //Used to play single sound clips.
-        public void PlaySingle(AudioClip clip)
+        public void PlayFX(string fxfile, float pitch)
         {
             //Set the clip of our efxSource audio source to the clip passed in as a parameter.
+            AudioClip clip = (AudioClip)Resources.Load(fxfile);
             efxSource.clip = clip;
-
+            efxSource.pitch = pitch;
+            //efxSource.loop = true;
             //Play the clip.
             efxSource.Play();
+        }
+
+        public void PlayMusic(string audio_name)
+        {
+            AudioClip clip = (AudioClip)Resources.Load(audio_name);
+            musicSource.clip = clip;
+
+            //Play the clip.
+            musicSource.Play();
         }
 
 
