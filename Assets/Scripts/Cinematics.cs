@@ -21,7 +21,6 @@ public class Cinematics
 	// Accesseur des composants de la scene;
 	private tk2dCamera camera;
 	private List<GameObject> chars;
-	private AudioMgr audioMgr;
 
 	private bool finished;
 	public bool InProgress {
@@ -29,7 +28,7 @@ public class Cinematics
 	}
 
 
-	public void Init(tk2dCamera _camera, List<GameObject> _chars, AudioMgr mgr)
+	public void Init(tk2dCamera _camera, List<GameObject> _chars)
 	{
 		camera = _camera;
 		chars = _chars;
@@ -49,6 +48,7 @@ public class Cinematics
 
 	public void Play(String map, int id)
 	{
+		Debug.Log ("Starting cinematics : " + map + "_" + id);
 		Type item = this.GetType ();
 		MethodInfo function = item.GetMethod ("play_" + map + "_" + id, BindingFlags.NonPublic | BindingFlags.Instance);
 		if (function == null)
@@ -66,19 +66,6 @@ public class Cinematics
 		}
 
 		throw new Exception("Le personnage n'existe pas");
-	}
-
-	private void play_village_1()
-	{
-		/*
-		 	Camera.SetPosition(x, y)
-		 	Camera.Move(x, y)
-			Char1.Move(A, B, WALK/RUN/TELEPORT);
-			PlaySound("mname");
-			PlayEffect("sfx");
-			StopSound();
-
-		*/
 	}
 
 	private void play_colline_1()
@@ -133,5 +120,81 @@ public class Cinematics
 		ch5.WalkTo (25, 14, Orientation.RIGHT);
 
 		timer = 2f;
+	}
+
+	private void play_colline_2() {
+		timer = 0f;
+	}	
+	private void play_colline_3() {
+		timer = 0f;
+	}
+	private void play_colline_4() {
+		timer = 0f;
+	}
+	private void play_colline_5() {
+		timer = 0f;
+	}
+	private void play_colline_6() {
+		timer = 0f;
+	}
+	private void play_colline_7() {
+		timer = 0f;
+	}
+	private void play_colline_8() {
+		timer = 0f;
+	}
+	private void play_colline_9() {
+		timer = 0f;
+	}
+	private void play_colline_10() {
+		timer = 0f;
+	}
+	private void play_colline_11() {
+		timer = 0f;
+	}
+	private void play_colline_12() {
+		timer = 0f;
+	}
+	private void play_colline_13() {
+		timer = 0f;
+	}
+	private void play_colline_14() {
+		timer = 0f;
+	}
+	private void play_chemincolvil_1() {
+		timer = 0f;
+	}
+	private void play_chemincolvil_2() {
+		timer = 0f;
+	}
+	private void play_village_1() {
+		timer = 0f;
+	}
+	private void play_foret_1() {
+		timer = 0f;
+	}
+	private void play_foret_2() {
+		timer = 0f;
+	}
+	private void play_foret_3() {
+		timer = 0f;
+	}
+	private void play_foret_4() {
+		timer = 0f;
+	}
+	private void play_noir_1() {
+		timer = 0f;
+	}
+	private void play_noir_2() {
+		timer = 0f;
+	}
+	private void play_noir_3() {
+		timer = 0f;
+	}
+	private void play_noir_4() {
+		timer = 0f;
+	}
+	private void play_noir_5() {
+		timer = 0f;
 	}
 }

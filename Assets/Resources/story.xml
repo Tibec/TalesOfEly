@@ -28,6 +28,7 @@
 		</scene>
 		    <scene id='2' map="colline">
 				<content>
+					<cinematic id='2' />
 					<dialog>
 					  <part char='0'>Lorsqu'il se réveille, la nuit est en train de tomber</part>
 					  <part char='1'>Ah ça fait du bien... </part>
@@ -43,7 +44,8 @@
 					  <part char='1'>J'ai pourtant pas rêvé …</part>
 					  <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
 					</dialog>
-					<cinematic id='2' />
+					<cinematic id='3' />
+					<cinematic id='4' />
 			  </content>
 			  <choices>
 					<c goto='20'>#Direction la maison</c>
@@ -52,6 +54,10 @@
 
   		<scene id='3' map="colline">
 			<content>
+				<cinematic id='5' />
+				<cinematic id='6' />
+				<cinematic id='7' />
+				<cinematic id='8' />
 				<dialog>
 					<part char='1'>Mais qu'est-ce que !? </part>
 					<part char='1'>Aïe ! Ma jambe !</part>
@@ -83,7 +89,7 @@
 				<c goto='22'>Entrer dans la maison</c>
 			</choices>
 		</scene>
-		<scene id='22' map="maison_ely">
+		<scene id='22' map="noir">
 			<content>
 				<cinematic id='1' />
 				<dialog>
@@ -98,7 +104,7 @@
 			</choices>
 		</scene>
 		
-	<scene id='4' map="maison_ely">
+	<scene id='4' map="noir">
 			<content>
 				<dialog>
 					<part char='1'>Maman ?</part>
@@ -118,7 +124,9 @@
 		
     <scene id='5' map="colline">
       <content>
-        <cinematic id='1'/>
+        <cinematic id='9'/>
+        <cinematic id='10'/>
+        <cinematic id='11'/>
         <dialog>
 			<part char='1'>Avant de rentrer je vais réessayé ...</part>
 			<part char='1'>Bon. Je vais être fixé.</part>
@@ -143,7 +151,7 @@
 	
 	<scene id='7'  map="colline">
 		<content>
-			<cinematic id='1'/>
+			<cinematic id='12'/>
 		</content>
 		<choices>
 			<c goto='30'>Direction chemin</c>
@@ -151,7 +159,7 @@
     </scene>	
 	<scene id='30'  map="chemincolvil">
 		<content>
-			<cinematic id='2'/>
+			<cinematic id='1'/>
 		</content>
 		<choices>
 			<c goto='31'>Retour village</c>
@@ -159,7 +167,7 @@
     </scene>
 	<scene id='31'  map="village">
 		<content>
-			<cinematic id='2'/>
+			<cinematic id='1'/>
 			<dialog>
 				  <part char='2'>Pourquoi manque t-il deux chèvres !</part>
 				  <part char='1'>M..M...Mère...</part>
@@ -185,7 +193,7 @@
 	
 	<scene id='40' map="colline">
 		<content>
-			<cinematic id='5' />
+			<cinematic id='13'/>
 		</content>
 		<choices>
 			<c goto='6'>Direction la foret</c>
@@ -193,7 +201,7 @@
 	</scene>
 	<scene id='6' map="foret">
 		<content>
-			<cinematic id='2' />
+			<cinematic id='1' />
 			<dialog>
 				<part char='1'>*voix tremblante* Pourquoi cette forêt est-elle interdite déjà ?</part>
 				<part char='1'>Que dit la légende, déjà?</part>
@@ -218,6 +226,7 @@
 	</scene>
 	<scene id='50' map="village_elfes">
 		<content>
+			<cinematic id='1'/>
 			<dialog>
 				<part char='1'>OUAAAAAAAAAAAAAAAAAAAH !!</part>
 				<part char='1'>*Reprend ses esprits* Cet endroit est vraiment étranges ....</part>
@@ -274,7 +283,7 @@
     
 	    <scene id='55' map="foret">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='99' />
 				<dialog>
 					<part char='0'>Ely se dirige donc le portail et le traverse. Toujours sous le choc, il se demande s'il a fait le bon choix. Il aperçoit alors une de ces chèvres, puis le reste du troupeau.</part>
 					<part char='0'>Notre jeune aventurier retrouve le sourire et rentre avec ces chèvres.</part>
@@ -296,7 +305,7 @@
     
 	    <scene id='57' map="village">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='1' />
 				<dialog>
 					<part char='0'>Une fois rentrée il raconte à sa mère, toute son aventure</part>
 					<part char='0'>A peine avait-il commencé...</part>
@@ -311,7 +320,7 @@
 
 		<scene id='8' map="village_elfes">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='3' />
 				<dialog>
 					<part char='0'>Ely et l'Ancien se rendent à l’Autel des Chutes Sacrées,  et ce dernier explique à Ely qu'un être maléfique s'attaque au village depuis quelques temps.</part>
 					<part char='4'>Nous avons besoin de ton aide, Ely. J'ai ressenti ta puissance à la seconde où je t'ai vu. Ton aide nous serait précieuse. </part>
@@ -325,7 +334,24 @@
 				<c goto='60'>Go autel</c>
 			</choices>
 		</scene>
-		<scene id='60' map="colline">
+		<scene id='60' map="finale">
+			<content>
+				<cinematic id='1' />
+				<dialog>
+					<part char='4'>Un être maléfique s'attaque au village depuis quelques temps, et il se terre dans ce temple</part>
+					<part char='4'>Nous avons besoin de ton aide, Ely. J'ai ressenti ta puissance à la seconde où je t'ai vu. Ton aide nous serait précieuse. </part>
+					<part char='1'>*fier* J'en serais enchanté ! </part>
+					<part char='0'>Ely se concentre et grâce aux conseils de l'Ancien, perçoit une forte énergie maléfique venant du Nord-Est. L’Ancien s’inquiète car dans cette direction se trouve le Temple sacré de Serena, leur déesse. Il prévient tous les habitants qui se dirigent vers le temple.</part>
+					<part char='0'>Ely et quelques elfes courageux se dirigent vers le temple. Ils découvrent sur place le Roi des Ombres, une créature mi-démon mi-dragon, redoutée de tous les êtres. </part>
+					<part char='4'>Ely, peux tu nous aider à vaincre ce démon ? </part>
+					</dialog>
+			</content>
+			<choices>
+				<c goto='99'>Go boss</c>
+			</choices>
+		</scene>
+		
+		<scene id='99' map="noir">
 			<content>
 				<cinematic id='2' />
 				<dialog>
@@ -345,7 +371,7 @@
 
         <scene id='10' map="colline">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='14' />
 				<dialog>
 					<part char='1'>Non je ne peux pas... Je ne suis pas de taille à affronter un tel démon !</part>
 					<part char='0'>Ely court se mettre en retrait, laissant les elfes affronter le démon seul.</part>
@@ -360,7 +386,7 @@
 
         <scene id='70' fin="true" map="noir">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='3' />
 				<dialog>
 					<part char='1'>Non je ne peux pas... Je ne suis pas de taille à affronter un tel démon !</part>
 					<part char='0'>Ely court se mettre en retrait, laissant les elfes affronter le démon seul.</part>
@@ -372,7 +398,7 @@
 
 		 <scene id='61' fin="true" map="noir">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='4' />
 				<dialog>
 					<part char='1'>Allons-y !!!</part>
 					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
@@ -386,9 +412,9 @@
 			</choices>
 		</scene> 
 
-		 <scene id='62' fin="true" map="foret">
+		 <scene id='62' fin="true" map="noir">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='5' />
 				<dialog>
 					<part char='1'>Allons-y !!!</part>
 					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>
@@ -414,13 +440,13 @@
 				</dialog>
 			</content>
 			<choices>
-				<c goto='64'>Go combat fail</c>
+				<c goto='64'>Go fin</c>
 			</choices>
 		</scene> 
 
 		 <scene id='64' fin="true" map="village">
 			<content>
-				<cinematic id='2' />
+				<cinematic id='1' />
 				<dialog>
 					<part char='1'>Allons-y !!!</part>
 					<part char='0'>Ely, tu dois rester concentrer et trouver la faille qui nous permettra de le vaincre. Toi seul pourra l'atteindre. Observe bien ses mouvements et agit !</part>

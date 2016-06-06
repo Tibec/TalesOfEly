@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour {
 
 
 		if (scene.Map != UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name) {
-			UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (scene.Map);
-
+			UnityEngine.SceneManagement.SceneManager.LoadScene(scene.Map);
+			return;
 		}
 
 		if (stepInProgress == false) {
@@ -72,8 +72,8 @@ public class GameManager : MonoBehaviour {
 
 				} else { // (c.get_type () == content_type.CINEMATIC) 
 					cinematicMgr = new Cinematics();
-					cinematicMgr.Init(cam, chars, null );
-					cinematicMgr.Play (scene.Map, 1);
+					cinematicMgr.Init(cam, chars);
+					cinematicMgr.Play (scene.Map, c.get_id());
 				}
 			}
 				
@@ -111,13 +111,15 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Reset()
-	{
+	{		
 		// Get current scene content
 		try {
 			scene = StoryManager.Instance.GetScene(PlayerData.Instance.Scene);
 		} catch(Exception e) {
-			UnityEngine.SceneManagement.SceneManager.LoadSceneAsync ("Menu");
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("Menu");
 		}
+		Debug.Log ("Debut de la scene : " + scene.Id);
+
 		step = 0;
 		stepInProgress = false;
 		dialogUI.SetActive(false);
@@ -126,7 +128,6 @@ public class GameManager : MonoBehaviour {
 		cam.transform.position = new Vector3 (-50, -50, -50);
 
 
-		Debug.Log ("Debut de la scene : " + scene.Id);
 	}
 
 	void LoadCharacters() {
