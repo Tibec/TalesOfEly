@@ -28,26 +28,20 @@
 		</scene>
   		<scene id='3' map="colline">
 			<content>
-				<cinematic id='2' />
 				<dialog>
-	    		    <part char='0'>Quelques minutes plus tard, il remarque tout à coup qu'une de ses chèvres est en train de s'enfuir.</part>
 					<part char='1'>Mais qu'est-ce que !? </part>
-					<part char='0'>Il s'élance, passe à côté d'un buisson de ronces et s’égratigne la jambe</part>
-					<part char='1'>Aïe !</part>
-					<part char='0'>Il continue tout de même sur sa lancée, et finit par rattraper sa chèvre.</part>
-					<part char='1'>Ah ! Je t'ai rattrapée. Allez, retourne avec les autres !</part>
-	                <part char='0'>Ely et la chèvre retourne progressivement vers le sommet de la colline.</part>
-         	        <part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville.</part>
-        	        <part char='0'>Ely jette un coup d’œil à sa cheville.</part>
+					<part char='1'>Aïe ! Ma jambe !</part>
+					<part char='1'>Bon, ça saigne mais je dois la rattraper !</part>
+					<part char='1'>Ah ! Je t'ai rattrapée ! </part>
+					<part char='1'>Allez, retourne donc avec les autres !</part>
+         	        <part char='1'>Bon, je vais tâcher de trouver quelque chose pour nouer autour de ma cheville ...</part>
 			        <part char='1'>Tiens ?!</part>  
-			        <part char='0'>Sa cheville n'a aucune trace d’égratignure</part>
-			        <part char='1'>J'ai pourtant pas rêvé …</part>  
+			        <part char='1'>J'ai pourtant pas rêvé ...</part>  
 			        <part char='0'>Ely rentre chez lui, et intrigué il se demande si il devrait en parler à sa mère</part>
 				</dialog>
 			</content>
 			<choices>
-				<c goto='4'>Il lui en parle pendant le dîner.</c>
-				<c goto='5'>ayant peur d’être pris pour un fou, il garde cette expérience pour lui.</c>
+				<c goto='4'>#Direction la maison</c>
 			</choices>
 		</scene>
     <scene id='2' map="colline">
