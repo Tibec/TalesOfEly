@@ -39,7 +39,7 @@ namespace Entities
 		}
 		public string Profile {
 			get { return profile; }
-            set { this.profile = value; }
+            set { this.profile = value;}
 		}
 
     }

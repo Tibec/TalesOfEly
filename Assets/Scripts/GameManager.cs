@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	public void Awake () {
-		LoadCharacters ();
 		Reset ();
+		LoadCharacters ();
 	}
 
 	// Update is called once per frame
@@ -104,12 +104,9 @@ public class GameManager : MonoBehaviour {
 	{
 		// Get current scene content
 		try {
-			Debug.Log(PlayerData.Instance.Scene);
 			scene = StoryManager.Instance.GetScene(PlayerData.Instance.Scene);
 		} catch(Exception e) {
 			UnityEngine.SceneManagement.SceneManager.LoadSceneAsync ("Menu");
-			Debug.Log (e.Message);
-			return;
 		}
 		step = 0;
 		stepInProgress = false;

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
+using Entities;
 
 public class DialogManager : tk2dUIBaseDemoController {
 	// Attribute to easily get items //
@@ -11,6 +13,7 @@ public class DialogManager : tk2dUIBaseDemoController {
 	public GameObject textBox;
 	public tk2dTextMesh textContainer;
 	public tk2dTextMesh speakerTextContainer;
+    public GameObject currentPortrait;
 
 	////////////////////////////////////////////
 	private List<string> speakers;
@@ -24,6 +27,12 @@ public class DialogManager : tk2dUIBaseDemoController {
 	{
 		Reset ();
 	}
+
+    //public void setCharacterPortrait()
+    //{
+    //    Transform character_portrait = transform.Find("UICamera/UIdialog/CharacterPortrait");
+    //    character_portrait.GetComponent<SpriteRenderer>().sprite = 
+    //}
 
 	public void OnEnable()
 	{
@@ -43,7 +52,28 @@ public class DialogManager : tk2dUIBaseDemoController {
 		} else {
 			textContainer.text = texts [currentText];
 			speakerTextContainer.text = speakers [currentText];
-		}
+            SpriteRenderer sr = currentPortrait.GetComponent<SpriteRenderer>();
+            Character c = StoryManager.Instance.GetCharacter(speakers[currentText]);
+            string filename = c.Profile;
+            if (c.Name == "Ely")
+            {
+                if (PlayerData.Instance.Avatar == PlayerData.AvatarType.Male)
+                    filename = "ElyM";
+                else
+                {
+                    filename = "ElyF";
+                }
+            }
+            string path = "Faces/" + filename;
+            Sprite inputTexture = Resources.Load<Sprite>(path);
+            if (inputTexture == null)
+                Debug.Log("inputTexture NULL!");
+            else
+            {
+                Debug.Log("Found "+ speakers[currentText]);
+            }
+            sr.sprite = inputTexture;
+        }
 	}
 
 	public void OnDisable()
@@ -73,14 +103,15 @@ public class DialogManager : tk2dUIBaseDemoController {
 
 	}
 
+
 	public bool IsFinished()
 	{
 		return finished;
 	}
-
+    
 	public void Reset()
 	{
-		texts = new List<string> ();
+        texts = new List<string> ();
 		speakers = new List<string> ();
 		finished = false;
 	}
@@ -89,4 +120,5 @@ public class DialogManager : tk2dUIBaseDemoController {
 	public void Update () {
 
 	}
+   
 }
